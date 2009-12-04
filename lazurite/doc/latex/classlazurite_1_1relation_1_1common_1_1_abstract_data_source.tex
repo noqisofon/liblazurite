@@ -1,0 +1,127 @@
+\hypertarget{classlazurite_1_1relation_1_1common_1_1_abstract_data_source}{
+\section{クラス lazurite::relation::common::AbstractDataSource}
+\label{classlazurite_1_1relation_1_1common_1_1_abstract_data_source}\index{lazurite::relation::common::AbstractDataSource@{lazurite::relation::common::AbstractDataSource}}
+}
+
+
+データソースに共通の処理を予め実装してある抽象クラスです。  
+lazurite::relation::common::AbstractDataSourceに対する継承グラフ:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.96454cm]{classlazurite_1_1relation_1_1common_1_1_abstract_data_source}
+\end{center}
+\end{figure}
+\subsection*{Public メソッド}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_a8c31edb7b217d4855f9dc2758146a507}{AbstractDataSource} ()
+\item 
+\hyperlink{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_a92f48ab543e60a20650ef38608963841}{AbstractDataSource} (int \_\-\_\-timeout)
+\item 
+\hyperlink{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_aa8f022e7998eff1fb34d3d8dd7c38d39}{AbstractDataSource} (TextWriter \_\-\_\-out)
+\item 
+\hyperlink{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_af8a94afbb778766307e208473fe3fa0f}{AbstractDataSource} (int \_\-\_\-timeout, TextWriter \_\-\_\-out)
+\item 
+abstract DbConnection \hyperlink{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_a1706b5b8821b00ad2391dd0fcf98a767}{getConnection} ()
+\begin{DoxyCompactList}\small\item\em この \hyperlink{interfacelazurite_1_1relation_1_1common_1_1_data_source}{DataSource} が表すデータソースへの接続を試みます。 \item\end{DoxyCompactList}\item 
+abstract DbConnection \hyperlink{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_a1e828b5e7c1e29b21439d910f05005aa}{getConnection} (string \_\-\_\-username, string \_\-\_\-password)
+\begin{DoxyCompactList}\small\item\em この \hyperlink{interfacelazurite_1_1relation_1_1common_1_1_data_source}{DataSource} が表すデータソースへの接続を試みます。 \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{プロパティ}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_a95357e4aa2578c81c55805ef877f6694}{loginTimeout}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em データベースの接続試行中にこのデータソースが待機できる最長時間にアクセスします。 \item\end{DoxyCompactList}\item 
+TextWriter \hyperlink{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_ac0df2dbaf0813abab29a34aad40a7e12}{logWriter}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em このデータソースのログライターにアクセスします。 \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{説明}
+データソースに共通の処理を予め実装してある抽象クラスです。 
+
+\subsection{コンストラクタとデストラクタ}
+\hypertarget{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_a8c31edb7b217d4855f9dc2758146a507}{
+\index{lazurite::relation::common::AbstractDataSource@{lazurite::relation::common::AbstractDataSource}!AbstractDataSource@{AbstractDataSource}}
+\index{AbstractDataSource@{AbstractDataSource}!lazurite::relation::common::AbstractDataSource@{lazurite::relation::common::AbstractDataSource}}
+\subsubsection[{AbstractDataSource}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::relation::common::AbstractDataSource::AbstractDataSource ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_a8c31edb7b217d4855f9dc2758146a507}
+\hypertarget{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_a92f48ab543e60a20650ef38608963841}{
+\index{lazurite::relation::common::AbstractDataSource@{lazurite::relation::common::AbstractDataSource}!AbstractDataSource@{AbstractDataSource}}
+\index{AbstractDataSource@{AbstractDataSource}!lazurite::relation::common::AbstractDataSource@{lazurite::relation::common::AbstractDataSource}}
+\subsubsection[{AbstractDataSource}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::relation::common::AbstractDataSource::AbstractDataSource (int {\em \_\-\_\-timeout})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_a92f48ab543e60a20650ef38608963841}
+\hypertarget{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_aa8f022e7998eff1fb34d3d8dd7c38d39}{
+\index{lazurite::relation::common::AbstractDataSource@{lazurite::relation::common::AbstractDataSource}!AbstractDataSource@{AbstractDataSource}}
+\index{AbstractDataSource@{AbstractDataSource}!lazurite::relation::common::AbstractDataSource@{lazurite::relation::common::AbstractDataSource}}
+\subsubsection[{AbstractDataSource}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::relation::common::AbstractDataSource::AbstractDataSource (TextWriter {\em \_\-\_\-out})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_aa8f022e7998eff1fb34d3d8dd7c38d39}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-out}]\end{DoxyParams}
+\hypertarget{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_af8a94afbb778766307e208473fe3fa0f}{
+\index{lazurite::relation::common::AbstractDataSource@{lazurite::relation::common::AbstractDataSource}!AbstractDataSource@{AbstractDataSource}}
+\index{AbstractDataSource@{AbstractDataSource}!lazurite::relation::common::AbstractDataSource@{lazurite::relation::common::AbstractDataSource}}
+\subsubsection[{AbstractDataSource}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::relation::common::AbstractDataSource::AbstractDataSource (int {\em \_\-\_\-timeout}, \/  TextWriter {\em \_\-\_\-out})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_af8a94afbb778766307e208473fe3fa0f}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-timeout}]\item[{\em \_\-\_\-out}]\end{DoxyParams}
+
+
+\subsection{関数}
+\hypertarget{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_a1e828b5e7c1e29b21439d910f05005aa}{
+\index{lazurite::relation::common::AbstractDataSource@{lazurite::relation::common::AbstractDataSource}!getConnection@{getConnection}}
+\index{getConnection@{getConnection}!lazurite::relation::common::AbstractDataSource@{lazurite::relation::common::AbstractDataSource}}
+\subsubsection[{getConnection}]{\setlength{\rightskip}{0pt plus 5cm}abstract DbConnection lazurite::relation::common::AbstractDataSource::getConnection (string {\em \_\-\_\-username}, \/  string {\em \_\-\_\-password})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_a1e828b5e7c1e29b21439d910f05005aa}
+
+
+この \hyperlink{interfacelazurite_1_1relation_1_1common_1_1_data_source}{DataSource} が表すデータソースへの接続を試みます。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-username}]ユーザー名。\item[{\em \_\-\_\-password}]ユーザーのパスワード。\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+\hyperlink{interfacelazurite_1_1relation_1_1common_1_1_data_source_a692379eb1733a5c36a25b141e6091a01}{lazurite::relation::common::DataSource}を実装しています。
+
+\hyperlink{classlazurite_1_1relation_1_1oledb_1_1_o_l_e_data_source_a8bcb0954e47ca8ec4c117ade3e9f0ce9}{lazurite::relation::oledb::OLEDataSource}, と \hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_a49e9bb60b11cb3d984257702a566e869}{lazurite::relation::sqlclient::SQLDataSource}で実装されています。\hypertarget{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_a1706b5b8821b00ad2391dd0fcf98a767}{
+\index{lazurite::relation::common::AbstractDataSource@{lazurite::relation::common::AbstractDataSource}!getConnection@{getConnection}}
+\index{getConnection@{getConnection}!lazurite::relation::common::AbstractDataSource@{lazurite::relation::common::AbstractDataSource}}
+\subsubsection[{getConnection}]{\setlength{\rightskip}{0pt plus 5cm}abstract DbConnection lazurite::relation::common::AbstractDataSource::getConnection ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_a1706b5b8821b00ad2391dd0fcf98a767}
+
+
+この \hyperlink{interfacelazurite_1_1relation_1_1common_1_1_data_source}{DataSource} が表すデータソースへの接続を試みます。 \begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+\hyperlink{interfacelazurite_1_1relation_1_1common_1_1_data_source_a463c3bbeedcd8a6332ec0a87eb530a3c}{lazurite::relation::common::DataSource}を実装しています。
+
+\hyperlink{classlazurite_1_1relation_1_1oledb_1_1_o_l_e_data_source_a7dbd44842590d2d1f11a6ddca7a393b7}{lazurite::relation::oledb::OLEDataSource}, と \hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_a99a7bdaa7ca6fce82a89f537a72b2e23}{lazurite::relation::sqlclient::SQLDataSource}で実装されています。
+
+\subsection{プロパティ}
+\hypertarget{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_a95357e4aa2578c81c55805ef877f6694}{
+\index{lazurite::relation::common::AbstractDataSource@{lazurite::relation::common::AbstractDataSource}!loginTimeout@{loginTimeout}}
+\index{loginTimeout@{loginTimeout}!lazurite::relation::common::AbstractDataSource@{lazurite::relation::common::AbstractDataSource}}
+\subsubsection[{loginTimeout}]{\setlength{\rightskip}{0pt plus 5cm}int lazurite::relation::common::AbstractDataSource::loginTimeout\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_a95357e4aa2578c81c55805ef877f6694}
+
+
+データベースの接続試行中にこのデータソースが待機できる最長時間にアクセスします。 
+
+\hyperlink{interfacelazurite_1_1relation_1_1common_1_1_common_data_source_a3fa02340190e1fed4b3cc28d87ce6908}{lazurite::relation::common::CommonDataSource}を実装しています。\hypertarget{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_ac0df2dbaf0813abab29a34aad40a7e12}{
+\index{lazurite::relation::common::AbstractDataSource@{lazurite::relation::common::AbstractDataSource}!logWriter@{logWriter}}
+\index{logWriter@{logWriter}!lazurite::relation::common::AbstractDataSource@{lazurite::relation::common::AbstractDataSource}}
+\subsubsection[{logWriter}]{\setlength{\rightskip}{0pt plus 5cm}TextWriter lazurite::relation::common::AbstractDataSource::logWriter\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_ac0df2dbaf0813abab29a34aad40a7e12}
+
+
+このデータソースのログライターにアクセスします。 
+
+\hyperlink{interfacelazurite_1_1relation_1_1common_1_1_common_data_source_a727c10810a495b3264cd6bda3417522e}{lazurite::relation::common::CommonDataSource}を実装しています。
+
+このクラスの説明は次のファイルから生成されました:\begin{DoxyCompactItemize}
+\item 
+lib/relation/common/AbstractDataSource.cs\end{DoxyCompactItemize}

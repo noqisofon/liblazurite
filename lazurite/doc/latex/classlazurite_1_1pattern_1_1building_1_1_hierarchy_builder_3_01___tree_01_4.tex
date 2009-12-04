@@ -1,0 +1,117 @@
+\hypertarget{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4}{
+\section{クラス テンプレート lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$}
+\label{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4}\index{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$@{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$}}
+}
+\subsection*{Public メソッド}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \hyperlink{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_a388c372979909c24afe69939be511c33}{buildPart} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected メソッド}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_a38d22da8097b1cb2703979c62c69e0cd}{HierarchyBuilder} (string \_\-\_\-target\_\-path)
+\item 
+\hyperlink{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_a4166ce2beb0880a9d57696de197e5854}{HierarchyBuilder} (string \_\-\_\-target\_\-path, TreeWeaver$<$ \_\-Tree $>$ \_\-\_\-weave\_\-filter)
+\item 
+\_\-Tree\mbox{[}$\,$\mbox{]} \hyperlink{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_a5440abb1c9c6480b24e4c31fae434c3c}{packing} (Queue$<$ \_\-Tree $>$ \_\-\_\-q)
+\end{DoxyCompactItemize}
+\subsection*{Protected 変数}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_ada0990fc059fbd69219012cbf946a83c}{target\_\-path\_\-}
+\item 
+\_\-Tree \hyperlink{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_a63792cc772647cdb88423ec306d86bf2}{root\_\-}
+\item 
+TreeWeaver$<$ \_\-Tree $>$ \hyperlink{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_a587334503ef9cb9cd3390f21d93feeb6}{weave\_\-filter\_\-} = null
+\end{DoxyCompactItemize}
+\subsection*{プロパティ}
+\begin{DoxyCompactItemize}
+\item 
+\_\-Tree \hyperlink{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_a51789f7637e2bd5b35aae74d53d0e799}{result}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 成果物を取得します。 \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{説明}
+\subsubsection*{template$<$\_\-Tree$>$ class lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$}
+
+HierarchyPacker クラスは、ツリー構造の対象物を参考に、再帰を使って TreeView コントロールでのツリー構造を簡単に作成するための抽象クラスです。
+
+此の例では、2 つ上のディレクトリをカレントとした木構造を作成します。 
+\begin{DoxyPre}
+ Exsample:
+      HierarchyPacker<Tree> packer = new \hyperlink{classlazurite_1_1pattern_1_1building_1_1_file_system_packer}{FileSystemPacker}("../../");
+      packer.each\_pack();
+      Tree tree = packer.result;
+ \end{DoxyPre}
+ 
+
+\subsection{コンストラクタとデストラクタ}
+\hypertarget{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_a38d22da8097b1cb2703979c62c69e0cd}{
+\index{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$@{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$}!HierarchyBuilder@{HierarchyBuilder}}
+\index{HierarchyBuilder@{HierarchyBuilder}!lazurite::pattern::building::HierarchyBuilder< _Tree >@{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$}}
+\subsubsection[{HierarchyBuilder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$\_\-Tree $>$ lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$::HierarchyBuilder (string {\em \_\-\_\-target\_\-path})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_a38d22da8097b1cb2703979c62c69e0cd}
+ツリー構造の一番上のパスを指定して HierarchyPacker オブジェクト を初期化します。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-target\_\-path}]ツリー構造の一番上のパス。 \end{DoxyParams}
+\hypertarget{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_a4166ce2beb0880a9d57696de197e5854}{
+\index{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$@{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$}!HierarchyBuilder@{HierarchyBuilder}}
+\index{HierarchyBuilder@{HierarchyBuilder}!lazurite::pattern::building::HierarchyBuilder< _Tree >@{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$}}
+\subsubsection[{HierarchyBuilder}]{\setlength{\rightskip}{0pt plus 5cm}template$<$\_\-Tree $>$ lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$::HierarchyBuilder (string {\em \_\-\_\-target\_\-path}, \/  TreeWeaver$<$ \_\-Tree $>$ {\em \_\-\_\-weave\_\-filter})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_a4166ce2beb0880a9d57696de197e5854}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-target\_\-path}]\item[{\em \_\-\_\-weave\_\-filter}]\end{DoxyParams}
+
+
+\subsection{関数}
+\hypertarget{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_a388c372979909c24afe69939be511c33}{
+\index{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$@{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$}!buildPart@{buildPart}}
+\index{buildPart@{buildPart}!lazurite::pattern::building::HierarchyBuilder< _Tree >@{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$}}
+\subsubsection[{buildPart}]{\setlength{\rightskip}{0pt plus 5cm}template$<$\_\-Tree $>$ abstract void lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$::buildPart ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_a388c372979909c24afe69939be511c33}
+\hypertarget{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_a5440abb1c9c6480b24e4c31fae434c3c}{
+\index{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$@{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$}!packing@{packing}}
+\index{packing@{packing}!lazurite::pattern::building::HierarchyBuilder< _Tree >@{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$}}
+\subsubsection[{packing}]{\setlength{\rightskip}{0pt plus 5cm}template$<$\_\-Tree $>$ \_\-Tree \mbox{[}$\,$\mbox{]} lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$::packing (Queue$<$ \_\-Tree $>$ {\em \_\-\_\-q})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_a5440abb1c9c6480b24e4c31fae434c3c}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-q}]\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+\subsection{変数}
+\hypertarget{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_a63792cc772647cdb88423ec306d86bf2}{
+\index{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$@{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$}!root\_\-@{root\_\-}}
+\index{root\_\-@{root\_\-}!lazurite::pattern::building::HierarchyBuilder< _Tree >@{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$}}
+\subsubsection[{root\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$\_\-Tree $>$ \_\-Tree lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$::{\bf root\_\-}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_a63792cc772647cdb88423ec306d86bf2}
+TreeView オブジェクトに一番近いノード。 \hypertarget{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_ada0990fc059fbd69219012cbf946a83c}{
+\index{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$@{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$}!target\_\-path\_\-@{target\_\-path\_\-}}
+\index{target\_\-path\_\-@{target\_\-path\_\-}!lazurite::pattern::building::HierarchyBuilder< _Tree >@{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$}}
+\subsubsection[{target\_\-path\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$\_\-Tree $>$ string lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$::{\bf target\_\-path\_\-}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_ada0990fc059fbd69219012cbf946a83c}
+ルートの文字列表現。 \hypertarget{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_a587334503ef9cb9cd3390f21d93feeb6}{
+\index{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$@{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$}!weave\_\-filter\_\-@{weave\_\-filter\_\-}}
+\index{weave\_\-filter\_\-@{weave\_\-filter\_\-}!lazurite::pattern::building::HierarchyBuilder< _Tree >@{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$}}
+\subsubsection[{weave\_\-filter\_\-}]{\setlength{\rightskip}{0pt plus 5cm}template$<$\_\-Tree $>$ TreeWeaver$<$\_\-Tree$>$ lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$::{\bf weave\_\-filter\_\-} = null\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_a587334503ef9cb9cd3390f21d93feeb6}
+アイコンを設定するためにフィルタリングするデリゲート。 
+
+\subsection{プロパティ}
+\hypertarget{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_a51789f7637e2bd5b35aae74d53d0e799}{
+\index{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$@{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$}!result@{result}}
+\index{result@{result}!lazurite::pattern::building::HierarchyBuilder< _Tree >@{lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$}}
+\subsubsection[{result}]{\setlength{\rightskip}{0pt plus 5cm}template$<$\_\-Tree $>$ \_\-Tree lazurite::pattern::building::HierarchyBuilder$<$ \_\-Tree $>$::result\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1building_1_1_hierarchy_builder_3_01___tree_01_4_a51789f7637e2bd5b35aae74d53d0e799}
+
+
+成果物を取得します。 
+
+このクラスの説明は次のファイルから生成されました:\begin{DoxyCompactItemize}
+\item 
+lib/pattern/building/HierarchyBuilder.cs\end{DoxyCompactItemize}

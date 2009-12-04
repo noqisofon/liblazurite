@@ -1,0 +1,126 @@
+\hypertarget{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory}{
+\section{クラス lazurite::etherial::SQLClientConnectionFactory}
+\label{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory}\index{lazurite::etherial::SQLClientConnectionFactory@{lazurite::etherial::SQLClientConnectionFactory}}
+}
+
+
+SQL サーバー用の接続オブジェクトを作成するファクトリークラスです。.  
+lazurite::etherial::SQLClientConnectionFactoryに対する継承グラフ:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory}
+\end{center}
+\end{figure}
+\subsection*{Public メソッド}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_aad631e564e1c6efe8af47008bdf8ad25}{SQLClientConnectionFactory} ()
+\item 
+\hyperlink{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_a8cd52ff389cd6e65bc27168b69e9c36b}{SQLClientConnectionFactory} (string \_\-\_\-catalog)
+\item 
+\hyperlink{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_af3ae72c1c3e7901831826f827c2c1970}{SQLClientConnectionFactory} (string \_\-\_\-data\_\-source, bool \_\-\_\-security, string \_\-\_\-catalog)
+\item 
+\hyperlink{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_af56744726136c9826b74bef8c8da632a}{SQLClientConnectionFactory} (string \_\-\_\-data\_\-source, bool \_\-\_\-security, string \_\-\_\-catalog, \hyperlink{classlazurite_1_1etherial_1_1utils_1_1_connection_factory_1_1_account_disk}{AccountDisk} \_\-\_\-account\_\-disk)
+\item 
+SqlConnection \hyperlink{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_a1c36f41c524ba9513f12e796bc84cf48}{getConnection} ()
+\item 
+override DbDataAdapter \hyperlink{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_a08a4e0e2bb826ee05ba61ddebafae227}{createAdapter} ()
+\begin{DoxyCompactList}\small\item\em それぞれの型に相応しい DataAdapter を返します。 \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected メソッド}
+\begin{DoxyCompactItemize}
+\item 
+override DbConnection \hyperlink{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_ae90709eac75512aafebd8d81290e8100}{internalCreateConnection} (string \_\-\_\-data\_\-source, bool \_\-\_\-integrated\_\-security, string \_\-\_\-initial\_\-catalog)
+\begin{DoxyCompactList}\small\item\em 指定されたパラメータから接続オブジェクトを作成して返します。 \item\end{DoxyCompactList}\item 
+override DbConnection \hyperlink{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_a36d7093be17f200a15c05bf63fd1eeb1}{internalCreateConnection} (string \_\-\_\-data\_\-source, bool \_\-\_\-integrated\_\-security, string \_\-\_\-initial\_\-catalog, \hyperlink{classlazurite_1_1etherial_1_1utils_1_1_connection_factory_1_1_account_disk}{AccountDisk} \_\-\_\-account)
+\end{DoxyCompactItemize}
+
+
+\subsection{説明}
+SQL サーバー用の接続オブジェクトを作成するファクトリークラスです。. 
+
+\subsection{コンストラクタとデストラクタ}
+\hypertarget{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_aad631e564e1c6efe8af47008bdf8ad25}{
+\index{lazurite::etherial::SQLClientConnectionFactory@{lazurite::etherial::SQLClientConnectionFactory}!SQLClientConnectionFactory@{SQLClientConnectionFactory}}
+\index{SQLClientConnectionFactory@{SQLClientConnectionFactory}!lazurite::etherial::SQLClientConnectionFactory@{lazurite::etherial::SQLClientConnectionFactory}}
+\subsubsection[{SQLClientConnectionFactory}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::etherial::SQLClientConnectionFactory::SQLClientConnectionFactory ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_aad631e564e1c6efe8af47008bdf8ad25}
+\hypertarget{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_a8cd52ff389cd6e65bc27168b69e9c36b}{
+\index{lazurite::etherial::SQLClientConnectionFactory@{lazurite::etherial::SQLClientConnectionFactory}!SQLClientConnectionFactory@{SQLClientConnectionFactory}}
+\index{SQLClientConnectionFactory@{SQLClientConnectionFactory}!lazurite::etherial::SQLClientConnectionFactory@{lazurite::etherial::SQLClientConnectionFactory}}
+\subsubsection[{SQLClientConnectionFactory}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::etherial::SQLClientConnectionFactory::SQLClientConnectionFactory (string {\em \_\-\_\-catalog})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_a8cd52ff389cd6e65bc27168b69e9c36b}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-catalog}]\end{DoxyParams}
+\hypertarget{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_af3ae72c1c3e7901831826f827c2c1970}{
+\index{lazurite::etherial::SQLClientConnectionFactory@{lazurite::etherial::SQLClientConnectionFactory}!SQLClientConnectionFactory@{SQLClientConnectionFactory}}
+\index{SQLClientConnectionFactory@{SQLClientConnectionFactory}!lazurite::etherial::SQLClientConnectionFactory@{lazurite::etherial::SQLClientConnectionFactory}}
+\subsubsection[{SQLClientConnectionFactory}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::etherial::SQLClientConnectionFactory::SQLClientConnectionFactory (string {\em \_\-\_\-data\_\-source}, \/  bool {\em \_\-\_\-security}, \/  string {\em \_\-\_\-catalog})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_af3ae72c1c3e7901831826f827c2c1970}
+
+\begin{DoxyParams}{引数}
+\item[{\em initial\_\-catalog}]\end{DoxyParams}
+\hypertarget{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_af56744726136c9826b74bef8c8da632a}{
+\index{lazurite::etherial::SQLClientConnectionFactory@{lazurite::etherial::SQLClientConnectionFactory}!SQLClientConnectionFactory@{SQLClientConnectionFactory}}
+\index{SQLClientConnectionFactory@{SQLClientConnectionFactory}!lazurite::etherial::SQLClientConnectionFactory@{lazurite::etherial::SQLClientConnectionFactory}}
+\subsubsection[{SQLClientConnectionFactory}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::etherial::SQLClientConnectionFactory::SQLClientConnectionFactory (string {\em \_\-\_\-data\_\-source}, \/  bool {\em \_\-\_\-security}, \/  string {\em \_\-\_\-catalog}, \/  {\bf AccountDisk} {\em \_\-\_\-account\_\-disk})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_af56744726136c9826b74bef8c8da632a}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-data\_\-source}]\item[{\em \_\-\_\-security}]\item[{\em \_\-\_\-catalog}]\item[{\em \_\-\_\-account\_\-disk}]\end{DoxyParams}
+
+
+\subsection{関数}
+\hypertarget{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_a08a4e0e2bb826ee05ba61ddebafae227}{
+\index{lazurite::etherial::SQLClientConnectionFactory@{lazurite::etherial::SQLClientConnectionFactory}!createAdapter@{createAdapter}}
+\index{createAdapter@{createAdapter}!lazurite::etherial::SQLClientConnectionFactory@{lazurite::etherial::SQLClientConnectionFactory}}
+\subsubsection[{createAdapter}]{\setlength{\rightskip}{0pt plus 5cm}override DbDataAdapter lazurite::etherial::SQLClientConnectionFactory::createAdapter ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_a08a4e0e2bb826ee05ba61ddebafae227}
+
+
+それぞれの型に相応しい DataAdapter を返します。 \begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+\hyperlink{classlazurite_1_1etherial_1_1utils_1_1_connection_factory_a5980a0a44f55a60cf4b991920d7f8529}{lazurite::etherial::utils::ConnectionFactory}を実装しています。\hypertarget{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_a1c36f41c524ba9513f12e796bc84cf48}{
+\index{lazurite::etherial::SQLClientConnectionFactory@{lazurite::etherial::SQLClientConnectionFactory}!getConnection@{getConnection}}
+\index{getConnection@{getConnection}!lazurite::etherial::SQLClientConnectionFactory@{lazurite::etherial::SQLClientConnectionFactory}}
+\subsubsection[{getConnection}]{\setlength{\rightskip}{0pt plus 5cm}SqlConnection lazurite::etherial::SQLClientConnectionFactory::getConnection ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_a1c36f41c524ba9513f12e796bc84cf48}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\hypertarget{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_a36d7093be17f200a15c05bf63fd1eeb1}{
+\index{lazurite::etherial::SQLClientConnectionFactory@{lazurite::etherial::SQLClientConnectionFactory}!internalCreateConnection@{internalCreateConnection}}
+\index{internalCreateConnection@{internalCreateConnection}!lazurite::etherial::SQLClientConnectionFactory@{lazurite::etherial::SQLClientConnectionFactory}}
+\subsubsection[{internalCreateConnection}]{\setlength{\rightskip}{0pt plus 5cm}override DbConnection lazurite::etherial::SQLClientConnectionFactory::internalCreateConnection (string {\em \_\-\_\-data\_\-source}, \/  bool {\em \_\-\_\-integrated\_\-security}, \/  string {\em \_\-\_\-initial\_\-catalog}, \/  {\bf AccountDisk} {\em \_\-\_\-account})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_a36d7093be17f200a15c05bf63fd1eeb1}
+
+\begin{DoxyParams}{引数}
+\item[{\em dataSource}]\item[{\em security}]\item[{\em catalog}]\item[{\em account}]\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+\hyperlink{classlazurite_1_1etherial_1_1utils_1_1_connection_factory_a21c31b431a87b330f8a7030140059861}{lazurite::etherial::utils::ConnectionFactory}を実装しています。\hypertarget{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_ae90709eac75512aafebd8d81290e8100}{
+\index{lazurite::etherial::SQLClientConnectionFactory@{lazurite::etherial::SQLClientConnectionFactory}!internalCreateConnection@{internalCreateConnection}}
+\index{internalCreateConnection@{internalCreateConnection}!lazurite::etherial::SQLClientConnectionFactory@{lazurite::etherial::SQLClientConnectionFactory}}
+\subsubsection[{internalCreateConnection}]{\setlength{\rightskip}{0pt plus 5cm}override DbConnection lazurite::etherial::SQLClientConnectionFactory::internalCreateConnection (string {\em \_\-\_\-data\_\-source}, \/  bool {\em \_\-\_\-integrated\_\-security}, \/  string {\em \_\-\_\-initial\_\-catalog})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_s_q_l_client_connection_factory_ae90709eac75512aafebd8d81290e8100}
+
+
+指定されたパラメータから接続オブジェクトを作成して返します。 
+\begin{DoxyParams}{引数}
+\item[{\em data\_\-source}]\item[{\em integrated\_\-security}]\item[{\em initial\_\-catalog}]\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+\hyperlink{classlazurite_1_1etherial_1_1utils_1_1_connection_factory_adc19f91b5686f5a21af75a180bab6db3}{lazurite::etherial::utils::ConnectionFactory}を実装しています。
+
+このクラスの説明は次のファイルから生成されました:\begin{DoxyCompactItemize}
+\item 
+lib/etherial/SQLClientConnectionFactory.cs\end{DoxyCompactItemize}

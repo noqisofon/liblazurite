@@ -1,0 +1,151 @@
+\hypertarget{classlazurite_1_1attitude_1_1_abstract_file_node}{
+\section{クラス lazurite::attitude::AbstractFileNode}
+\label{classlazurite_1_1attitude_1_1_abstract_file_node}\index{lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}}
+}
+lazurite::attitude::AbstractFileNodeに対する継承グラフ:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classlazurite_1_1attitude_1_1_abstract_file_node}
+\end{center}
+\end{figure}
+\subsection*{Public メソッド}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classlazurite_1_1attitude_1_1_abstract_file_node_a78558f5a5aa0b91f8f084fcada9c9e75}{refresh} ()
+\item 
+bool \hyperlink{classlazurite_1_1attitude_1_1_abstract_file_node_a7360df3ccc00eedf89304d32666f6fa6}{accept} (\hyperlink{interfacelazurite_1_1pattern_1_1basics_1_1_i_visitor}{IVisitor}$<$ \hyperlink{classlazurite_1_1attitude_1_1_abstract_file_node}{AbstractFileNode} $>$ \_\-\_\-visitor)
+\item 
+\hypertarget{classlazurite_1_1attitude_1_1_abstract_file_node_a16846dca13a7164c141846a36037c134}{
+override string {\bfseries ToString} ()}
+\label{classlazurite_1_1attitude_1_1_abstract_file_node_a16846dca13a7164c141846a36037c134}
+
+\item 
+string \hyperlink{classlazurite_1_1attitude_1_1_abstract_file_node_a6a973ebb89790b0b5d2f149c25433b25}{to\_\-s} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected メソッド}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlazurite_1_1attitude_1_1_abstract_file_node_a4c5fd784fdd09f1c3c6bdbe7c3a4f89c}{AbstractFileNode} (string \_\-\_\-text)
+\begin{DoxyCompactList}\small\item\em 派生クラス用。 \item\end{DoxyCompactList}\item 
+void \hyperlink{classlazurite_1_1attitude_1_1_abstract_file_node_a3625419d7cf9f8332361b4a2bedef953}{setParent} (\hyperlink{classlazurite_1_1attitude_1_1_abstract_file_node}{AbstractFileNode} \_\-\_\-child)
+\end{DoxyCompactItemize}
+\subsection*{プロパティ}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlazurite_1_1attitude_1_1_abstract_file_node}{AbstractFileNode} \hyperlink{classlazurite_1_1attitude_1_1_abstract_file_node_aef503a4b7e10d0608b7d9143a0304b42}{root}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\hyperlink{classlazurite_1_1attitude_1_1_abstract_file_node}{AbstractFileNode} \hyperlink{classlazurite_1_1attitude_1_1_abstract_file_node_a2819f5572d0a5e33cdfc4f50ee0e8d8f}{parent}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \hyperlink{classlazurite_1_1attitude_1_1_abstract_file_node_aa117dae2818bab77b5215d6307c99aeb}{text}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \hyperlink{classlazurite_1_1attitude_1_1_abstract_file_node_ae05845cbaf865f736f7ab086c2917c37}{has\_\-parent}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+virtual bool \hyperlink{classlazurite_1_1attitude_1_1_abstract_file_node_aa10f20180663fe19416447c3b3486061}{is\_\-composite}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \hyperlink{classlazurite_1_1attitude_1_1_abstract_file_node_a1f0ba501fb7f35eec94d1c5efde04cc9}{depth}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \hyperlink{classlazurite_1_1attitude_1_1_abstract_file_node_aa577939aa3338fcc7ddb7a8b916bfce3}{index}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em カレントレベルでのインデックス位置を返します。 \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{説明}
+\hyperlink{classlazurite_1_1attitude_1_1_abstract_file_node}{AbstractFileNode} クラスは ツリー構造を簡単に作成するために作成されたコレクション風クラスです。 
+\begin{DoxyPre}
+ 此のクラスはComposite パターンを使用しています。
+ 残念ながら、文字列しか格納できません。あしからず。
+ \end{DoxyPre}
+ 
+
+\subsection{コンストラクタとデストラクタ}
+\hypertarget{classlazurite_1_1attitude_1_1_abstract_file_node_a4c5fd784fdd09f1c3c6bdbe7c3a4f89c}{
+\index{lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}!AbstractFileNode@{AbstractFileNode}}
+\index{AbstractFileNode@{AbstractFileNode}!lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}}
+\subsubsection[{AbstractFileNode}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::attitude::AbstractFileNode::AbstractFileNode (string {\em \_\-\_\-text})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classlazurite_1_1attitude_1_1_abstract_file_node_a4c5fd784fdd09f1c3c6bdbe7c3a4f89c}
+
+
+派生クラス用。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-text}]\end{DoxyParams}
+
+
+\subsection{関数}
+\hypertarget{classlazurite_1_1attitude_1_1_abstract_file_node_a7360df3ccc00eedf89304d32666f6fa6}{
+\index{lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}!accept@{accept}}
+\index{accept@{accept}!lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}}
+\subsubsection[{accept}]{\setlength{\rightskip}{0pt plus 5cm}bool lazurite::attitude::AbstractFileNode::accept ({\bf IVisitor}$<$ {\bf AbstractFileNode} $>$ {\em \_\-\_\-visitor})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1attitude_1_1_abstract_file_node_a7360df3ccc00eedf89304d32666f6fa6}
+Visitor にアクセスさせます。 \hypertarget{classlazurite_1_1attitude_1_1_abstract_file_node_a78558f5a5aa0b91f8f084fcada9c9e75}{
+\index{lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}!refresh@{refresh}}
+\index{refresh@{refresh}!lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}}
+\subsubsection[{refresh}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::attitude::AbstractFileNode::refresh ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1attitude_1_1_abstract_file_node_a78558f5a5aa0b91f8f084fcada9c9e75}
+ツリーを更新します。 
+
+\hyperlink{interfacelazurite_1_1attitude_1_1_i_file_node_ae6703f58ed2388eafcfce1c5947498e6}{lazurite::attitude::IFileNode}を実装しています。\hypertarget{classlazurite_1_1attitude_1_1_abstract_file_node_a3625419d7cf9f8332361b4a2bedef953}{
+\index{lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}!setParent@{setParent}}
+\index{setParent@{setParent}!lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}}
+\subsubsection[{setParent}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::attitude::AbstractFileNode::setParent ({\bf AbstractFileNode} {\em \_\-\_\-child})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classlazurite_1_1attitude_1_1_abstract_file_node_a3625419d7cf9f8332361b4a2bedef953}
+Composite に append されたときに呼ばれます。 \hypertarget{classlazurite_1_1attitude_1_1_abstract_file_node_a6a973ebb89790b0b5d2f149c25433b25}{
+\index{lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}!to\_\-s@{to\_\-s}}
+\index{to\_\-s@{to\_\-s}!lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}}
+\subsubsection[{to\_\-s}]{\setlength{\rightskip}{0pt plus 5cm}string lazurite::attitude::AbstractFileNode::to\_\-s ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1attitude_1_1_abstract_file_node_a6a973ebb89790b0b5d2f149c25433b25}
+Ruby 風。 
+
+\subsection{プロパティ}
+\hypertarget{classlazurite_1_1attitude_1_1_abstract_file_node_a1f0ba501fb7f35eec94d1c5efde04cc9}{
+\index{lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}!depth@{depth}}
+\index{depth@{depth}!lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}}
+\subsubsection[{depth}]{\setlength{\rightskip}{0pt plus 5cm}int lazurite::attitude::AbstractFileNode::depth\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}}
+\label{classlazurite_1_1attitude_1_1_abstract_file_node_a1f0ba501fb7f35eec94d1c5efde04cc9}
+レシーバのノードの深さを取得します。 
+
+\hyperlink{interfacelazurite_1_1attitude_1_1_i_file_node_a8904c51913b26cf0299ab565a1226b95}{lazurite::attitude::IFileNode}を実装しています。\hypertarget{classlazurite_1_1attitude_1_1_abstract_file_node_ae05845cbaf865f736f7ab086c2917c37}{
+\index{lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}!has\_\-parent@{has\_\-parent}}
+\index{has\_\-parent@{has\_\-parent}!lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}}
+\subsubsection[{has\_\-parent}]{\setlength{\rightskip}{0pt plus 5cm}bool lazurite::attitude::AbstractFileNode::has\_\-parent\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}}
+\label{classlazurite_1_1attitude_1_1_abstract_file_node_ae05845cbaf865f736f7ab086c2917c37}
+レシーバが親ノードを持っているかどうか判別します。 
+
+\hyperlink{interfacelazurite_1_1attitude_1_1_i_file_node_a564ece8cd8b85bc04bfe7fbe9d9ac0ba}{lazurite::attitude::IFileNode}を実装しています。\hypertarget{classlazurite_1_1attitude_1_1_abstract_file_node_aa577939aa3338fcc7ddb7a8b916bfce3}{
+\index{lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}!index@{index}}
+\index{index@{index}!lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}}
+\subsubsection[{index}]{\setlength{\rightskip}{0pt plus 5cm}int lazurite::attitude::AbstractFileNode::index\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}}
+\label{classlazurite_1_1attitude_1_1_abstract_file_node_aa577939aa3338fcc7ddb7a8b916bfce3}
+
+
+カレントレベルでのインデックス位置を返します。 
+
+\hyperlink{interfacelazurite_1_1attitude_1_1_i_file_node_a12c90a434a3bbbc7aa33998855d267d1}{lazurite::attitude::IFileNode}を実装しています。\hypertarget{classlazurite_1_1attitude_1_1_abstract_file_node_aa10f20180663fe19416447c3b3486061}{
+\index{lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}!is\_\-composite@{is\_\-composite}}
+\index{is\_\-composite@{is\_\-composite}!lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}}
+\subsubsection[{is\_\-composite}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool lazurite::attitude::AbstractFileNode::is\_\-composite\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}}
+\label{classlazurite_1_1attitude_1_1_abstract_file_node_aa10f20180663fe19416447c3b3486061}
+レシーバが Composite かどうか判別します。 
+
+\hyperlink{interfacelazurite_1_1attitude_1_1_i_file_node_aef59ad71eae714defca2dc6fb7a03435}{lazurite::attitude::IFileNode}を実装しています。
+
+\hyperlink{classlazurite_1_1attitude_1_1_folder_afcfe6dea96b826c40b4b99cf34888b0c}{lazurite::attitude::Folder}で再定義されています。\hypertarget{classlazurite_1_1attitude_1_1_abstract_file_node_a2819f5572d0a5e33cdfc4f50ee0e8d8f}{
+\index{lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}!parent@{parent}}
+\index{parent@{parent}!lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}}
+\subsubsection[{parent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AbstractFileNode} lazurite::attitude::AbstractFileNode::parent\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}}
+\label{classlazurite_1_1attitude_1_1_abstract_file_node_a2819f5572d0a5e33cdfc4f50ee0e8d8f}
+親ノードを取得します。 \hypertarget{classlazurite_1_1attitude_1_1_abstract_file_node_aef503a4b7e10d0608b7d9143a0304b42}{
+\index{lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}!root@{root}}
+\index{root@{root}!lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}}
+\subsubsection[{root}]{\setlength{\rightskip}{0pt plus 5cm}{\bf AbstractFileNode} lazurite::attitude::AbstractFileNode::root\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}}
+\label{classlazurite_1_1attitude_1_1_abstract_file_node_aef503a4b7e10d0608b7d9143a0304b42}
+ルートを取得します。 \hypertarget{classlazurite_1_1attitude_1_1_abstract_file_node_aa117dae2818bab77b5215d6307c99aeb}{
+\index{lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}!text@{text}}
+\index{text@{text}!lazurite::attitude::AbstractFileNode@{lazurite::attitude::AbstractFileNode}}
+\subsubsection[{text}]{\setlength{\rightskip}{0pt plus 5cm}string lazurite::attitude::AbstractFileNode::text\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}}
+\label{classlazurite_1_1attitude_1_1_abstract_file_node_aa117dae2818bab77b5215d6307c99aeb}
+
+
+\hyperlink{interfacelazurite_1_1attitude_1_1_i_file_node_a7ac4b8574f1527248a33d0e816e080cf}{lazurite::attitude::IFileNode}を実装しています。
+
+このクラスの説明は次のファイルから生成されました:\begin{DoxyCompactItemize}
+\item 
+lib/attitude/AbstractFileNode.cs\end{DoxyCompactItemize}

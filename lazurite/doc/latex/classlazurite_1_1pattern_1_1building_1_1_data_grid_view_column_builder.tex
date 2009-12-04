@@ -1,0 +1,215 @@
+\hypertarget{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder}{
+\section{クラス lazurite::pattern::building::DataGridViewColumnBuilder}
+\label{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder}\index{lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}}
+}
+
+
+DataGridView に DataGridViewColumn を追加するだけのクラスです。.  
+lazurite::pattern::building::DataGridViewColumnBuilderに対する継承グラフ:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder}
+\end{center}
+\end{figure}
+\subsection*{Public メソッド}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a5600475d4e77c99aad1100974e57c15a}{append} (DataGridViewColumn \_\-\_\-column)
+\begin{DoxyCompactList}\small\item\em カラムを追加します。 \item\end{DoxyCompactList}\item 
+int \hyperlink{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_adb64727ec006c6b270a8c1391aa9bcd1}{appendAll} (DataGridViewColumn\mbox{[}$\,$\mbox{]} \_\-\_\-columns)
+\begin{DoxyCompactList}\small\item\em カラムの配列を順番に追加します。 \item\end{DoxyCompactList}\item 
+void \hyperlink{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a6ad21586ca876a81078b44742dd8de39}{insert} (int \_\-\_\-column\_\-index, DataGridViewColumn \_\-\_\-inserted\_\-column)
+\begin{DoxyCompactList}\small\item\em 指定された位置にカラムを挿入します。 \item\end{DoxyCompactList}\item 
+int \hyperlink{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a506f5c9d3ee2696b8b70efd81da64e0a}{indexOf} (DataGridViewColumn \_\-\_\-column)
+\begin{DoxyCompactList}\small\item\em 指定されたカラムの位置を返します。 \item\end{DoxyCompactList}\item 
+int \hyperlink{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a0a78b6ea5e956bc1f4e09e5239783ffe}{indexOfName} (string \_\-\_\-finded\_\-name)
+\begin{DoxyCompactList}\small\item\em 指定された名前を持つカラムの位置を返します。 \item\end{DoxyCompactList}\item 
+bool \hyperlink{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a57b48f39ff894e5a0dba10c01b740579}{contains} (string \_\-\_\-contain\_\-name)
+\begin{DoxyCompactList}\small\item\em 指定された名前のカラムがあるか、調べます。 \item\end{DoxyCompactList}\item 
+bool \hyperlink{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a202d74ac180efeb371e78123006e8cef}{contains} (DataGridViewColumn \_\-\_\-contain\_\-column)
+\begin{DoxyCompactList}\small\item\em 指定されたカラムがあるか、調べます。 \item\end{DoxyCompactList}\item 
+bool \hyperlink{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a126f1056d51b42976f2c6399e00a5c46}{containsAll} (string\mbox{[}$\,$\mbox{]} \_\-\_\-column\_\-names)
+\begin{DoxyCompactList}\small\item\em 指定されたカラム名の配列を受け取って、 そのカラム名を持つカラムが存在するかどうかを調べます。 \item\end{DoxyCompactList}\item 
+bool \hyperlink{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_aead7db29d56803d88fd85a2e02ded6b6}{containsAll} (DataGridViewColumn\mbox{[}$\,$\mbox{]} \_\-\_\-contain\_\-columns)
+\item 
+DataGridViewColumn\mbox{[}$\,$\mbox{]} \hyperlink{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a11944b75c1f70aa64c630bc3e7121af4}{to\_\-a} ()
+\begin{DoxyCompactList}\small\item\em データグリッドビューが所有しているカラムを配列にして返します。 \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected メソッド}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_abb177bf444b5568f8c9444a3cc584d96}{DataGridViewColumnBuilder} (DataGridView \_\-\_\-gridview)
+\end{DoxyCompactItemize}
+\subsection*{プロパティ}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_ad34b93f2213b632fec0bc01050b5a92f}{attributesAmount}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em カラムの長さにアクセスします。 \item\end{DoxyCompactList}\item 
+int \hyperlink{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a8f3dd634d9e186fdf25e27677a1502a3}{entries}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em カラムの数を返します。 \item\end{DoxyCompactList}\item 
+int \hyperlink{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a2fe5c2e6cc6915ece3cc97855a761c12}{tupleAmount}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 行数にアクセスします。 \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{説明}
+DataGridView に DataGridViewColumn を追加するだけのクラスです。. 
+
+\subsection{コンストラクタとデストラクタ}
+\hypertarget{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_abb177bf444b5568f8c9444a3cc584d96}{
+\index{lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}!DataGridViewColumnBuilder@{DataGridViewColumnBuilder}}
+\index{DataGridViewColumnBuilder@{DataGridViewColumnBuilder}!lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}}
+\subsubsection[{DataGridViewColumnBuilder}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::pattern::building::DataGridViewColumnBuilder::DataGridViewColumnBuilder (DataGridView {\em \_\-\_\-gridview})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_abb177bf444b5568f8c9444a3cc584d96}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-gridview}]\end{DoxyParams}
+
+
+\subsection{関数}
+\hypertarget{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a5600475d4e77c99aad1100974e57c15a}{
+\index{lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}!append@{append}}
+\index{append@{append}!lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}}
+\subsubsection[{append}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::pattern::building::DataGridViewColumnBuilder::append (DataGridViewColumn {\em \_\-\_\-column})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a5600475d4e77c99aad1100974e57c15a}
+
+
+カラムを追加します。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-column}]\end{DoxyParams}
+\hypertarget{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_adb64727ec006c6b270a8c1391aa9bcd1}{
+\index{lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}!appendAll@{appendAll}}
+\index{appendAll@{appendAll}!lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}}
+\subsubsection[{appendAll}]{\setlength{\rightskip}{0pt plus 5cm}int lazurite::pattern::building::DataGridViewColumnBuilder::appendAll (DataGridViewColumn\mbox{[}$\,$\mbox{]} {\em \_\-\_\-columns})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_adb64727ec006c6b270a8c1391aa9bcd1}
+
+
+カラムの配列を順番に追加します。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-columns}]\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\hypertarget{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a202d74ac180efeb371e78123006e8cef}{
+\index{lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}!contains@{contains}}
+\index{contains@{contains}!lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}bool lazurite::pattern::building::DataGridViewColumnBuilder::contains (DataGridViewColumn {\em \_\-\_\-contain\_\-column})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a202d74ac180efeb371e78123006e8cef}
+
+
+指定されたカラムがあるか、調べます。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-contain\_\-column}]\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\hypertarget{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a57b48f39ff894e5a0dba10c01b740579}{
+\index{lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}!contains@{contains}}
+\index{contains@{contains}!lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}bool lazurite::pattern::building::DataGridViewColumnBuilder::contains (string {\em \_\-\_\-contain\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a57b48f39ff894e5a0dba10c01b740579}
+
+
+指定された名前のカラムがあるか、調べます。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-contain\_\-name}]\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\hypertarget{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_aead7db29d56803d88fd85a2e02ded6b6}{
+\index{lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}!containsAll@{containsAll}}
+\index{containsAll@{containsAll}!lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}}
+\subsubsection[{containsAll}]{\setlength{\rightskip}{0pt plus 5cm}bool lazurite::pattern::building::DataGridViewColumnBuilder::containsAll (DataGridViewColumn\mbox{[}$\,$\mbox{]} {\em \_\-\_\-contain\_\-columns})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_aead7db29d56803d88fd85a2e02ded6b6}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-contain\_\-columns}]\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\hypertarget{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a126f1056d51b42976f2c6399e00a5c46}{
+\index{lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}!containsAll@{containsAll}}
+\index{containsAll@{containsAll}!lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}}
+\subsubsection[{containsAll}]{\setlength{\rightskip}{0pt plus 5cm}bool lazurite::pattern::building::DataGridViewColumnBuilder::containsAll (string\mbox{[}$\,$\mbox{]} {\em \_\-\_\-column\_\-names})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a126f1056d51b42976f2c6399e00a5c46}
+
+
+指定されたカラム名の配列を受け取って、 そのカラム名を持つカラムが存在するかどうかを調べます。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-column\_\-names}]\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\hypertarget{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a506f5c9d3ee2696b8b70efd81da64e0a}{
+\index{lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}!indexOf@{indexOf}}
+\index{indexOf@{indexOf}!lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}}
+\subsubsection[{indexOf}]{\setlength{\rightskip}{0pt plus 5cm}int lazurite::pattern::building::DataGridViewColumnBuilder::indexOf (DataGridViewColumn {\em \_\-\_\-column})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a506f5c9d3ee2696b8b70efd81da64e0a}
+
+
+指定されたカラムの位置を返します。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-column}]\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\hypertarget{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a0a78b6ea5e956bc1f4e09e5239783ffe}{
+\index{lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}!indexOfName@{indexOfName}}
+\index{indexOfName@{indexOfName}!lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}}
+\subsubsection[{indexOfName}]{\setlength{\rightskip}{0pt plus 5cm}int lazurite::pattern::building::DataGridViewColumnBuilder::indexOfName (string {\em \_\-\_\-finded\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a0a78b6ea5e956bc1f4e09e5239783ffe}
+
+
+指定された名前を持つカラムの位置を返します。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-finded\_\-name}]\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\hypertarget{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a6ad21586ca876a81078b44742dd8de39}{
+\index{lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}!insert@{insert}}
+\index{insert@{insert}!lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::pattern::building::DataGridViewColumnBuilder::insert (int {\em \_\-\_\-column\_\-index}, \/  DataGridViewColumn {\em \_\-\_\-inserted\_\-column})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a6ad21586ca876a81078b44742dd8de39}
+
+
+指定された位置にカラムを挿入します。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-column\_\-index}]\item[{\em \_\-\_\-inserted\_\-column}]\end{DoxyParams}
+\hypertarget{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a11944b75c1f70aa64c630bc3e7121af4}{
+\index{lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}!to\_\-a@{to\_\-a}}
+\index{to\_\-a@{to\_\-a}!lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}}
+\subsubsection[{to\_\-a}]{\setlength{\rightskip}{0pt plus 5cm}DataGridViewColumn \mbox{[}$\,$\mbox{]} lazurite::pattern::building::DataGridViewColumnBuilder::to\_\-a ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a11944b75c1f70aa64c630bc3e7121af4}
+
+
+データグリッドビューが所有しているカラムを配列にして返します。 \begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+\subsection{プロパティ}
+\hypertarget{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_ad34b93f2213b632fec0bc01050b5a92f}{
+\index{lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}!attributesAmount@{attributesAmount}}
+\index{attributesAmount@{attributesAmount}!lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}}
+\subsubsection[{attributesAmount}]{\setlength{\rightskip}{0pt plus 5cm}int lazurite::pattern::building::DataGridViewColumnBuilder::attributesAmount\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_ad34b93f2213b632fec0bc01050b5a92f}
+
+
+カラムの長さにアクセスします。 \hypertarget{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a8f3dd634d9e186fdf25e27677a1502a3}{
+\index{lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}!entries@{entries}}
+\index{entries@{entries}!lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}}
+\subsubsection[{entries}]{\setlength{\rightskip}{0pt plus 5cm}int lazurite::pattern::building::DataGridViewColumnBuilder::entries\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a8f3dd634d9e186fdf25e27677a1502a3}
+
+
+カラムの数を返します。 \hypertarget{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a2fe5c2e6cc6915ece3cc97855a761c12}{
+\index{lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}!tupleAmount@{tupleAmount}}
+\index{tupleAmount@{tupleAmount}!lazurite::pattern::building::DataGridViewColumnBuilder@{lazurite::pattern::building::DataGridViewColumnBuilder}}
+\subsubsection[{tupleAmount}]{\setlength{\rightskip}{0pt plus 5cm}int lazurite::pattern::building::DataGridViewColumnBuilder::tupleAmount\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1building_1_1_data_grid_view_column_builder_a2fe5c2e6cc6915ece3cc97855a761c12}
+
+
+行数にアクセスします。 
+
+このクラスの説明は次のファイルから生成されました:\begin{DoxyCompactItemize}
+\item 
+lib/pattern/building/DataGridViewColumnBuilder.cs\end{DoxyCompactItemize}

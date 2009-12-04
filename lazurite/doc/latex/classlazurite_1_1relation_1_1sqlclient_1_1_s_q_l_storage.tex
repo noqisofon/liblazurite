@@ -1,0 +1,197 @@
+\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage}{
+\section{クラス lazurite::relation::sqlclient::SQLStorage}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage}\index{lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}}
+}
+lazurite::relation::sqlclient::SQLStorageに対する継承グラフ:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage}
+\end{center}
+\end{figure}
+\subsection*{Public メソッド}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a3352630f64bb6e7bcb4c1aed5cbec745}{SQLStorage} (\hyperlink{interfacelazurite_1_1relation_1_1sqlclient_1_1_s_q_l_adapter}{SQLAdapter} \_\-\_\-factory, DataSet \_\-\_\-dataset, SqlDataAdapter \_\-\_\-adapter)
+\item 
+DataTable \hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_ab02cfadf22bbfed1c30cc70463161293}{fetch} (string \_\-\_\-table\_\-name, SqlCommand \_\-\_\-command)
+\item 
+DataTable \hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a9c45c2be1c07d8c13d735dfc62a765c3}{fetch} (string \_\-\_\-table\_\-name, string \_\-\_\-sql\_\-query)
+\item 
+DataTable \hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a7119dd1b3a9d48005c7f44132fb2c0c3}{fetch} (string \_\-\_\-table\_\-name, string \_\-\_\-sql\_\-query, params SqlParameter\mbox{[}$\,$\mbox{]} \_\-\_\-palams)
+\item 
+bool \hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a57c78a427b2cb14056772f1239d3b45c}{contains} (string \_\-\_\-table\_\-name)
+\item 
+bool \hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a6e19d27b72776440160c0cc3a5b17795}{contains} (DataTable \_\-\_\-table)
+\item 
+int \hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a51138a6b8e2e5c1c30b92a0eb02c0550}{indexOf} (string \_\-\_\-name)
+\item 
+void \hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a00e7725dfa5e9758202a22b6a8f816db}{remove} (string \_\-\_\-removed\_\-name)
+\item 
+SqlConnection \hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a808b3cf0fa1b77858d07792d4a6c78d1}{getConnection} ()
+\item 
+void \hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a74de1ca5742b268f8d9bcaadfc88fa0f}{invoke\_\-table} (lazurite.common.TableInvoker \_\-\_\-invoker)
+\end{DoxyCompactItemize}
+\subsection*{プロパティ}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfacelazurite_1_1relation_1_1common_1_1_i_a_d_o_data_source}{common.IADODataSource} \hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a3ed27c030a7fbff731edbcc65c7f324e}{dataSource}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+DataTable \hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_acee858e25cf0ef20c657b89842fa9730}{this} \mbox{[}int index\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a1d90faa9bc618b3575713adb41ff7778}{arrowAppend}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string\mbox{[}$\,$\mbox{]} \hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a6a10ad962b51ba757b4664e397a8e31d}{tableNames}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a545b620205815ab5d91fddf3910eed88}{length}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{説明}
+\hyperlink{classlazurite_1_1relation_1_1_table_storage}{TableStorage} とはまったく関係がありません。 
+
+\subsection{コンストラクタとデストラクタ}
+\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a3352630f64bb6e7bcb4c1aed5cbec745}{
+\index{lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}!SQLStorage@{SQLStorage}}
+\index{SQLStorage@{SQLStorage}!lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}}
+\subsubsection[{SQLStorage}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::relation::sqlclient::SQLStorage::SQLStorage ({\bf SQLAdapter} {\em \_\-\_\-factory}, \/  DataSet {\em \_\-\_\-dataset}, \/  SqlDataAdapter {\em \_\-\_\-adapter})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a3352630f64bb6e7bcb4c1aed5cbec745}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-factory}]\item[{\em \_\-\_\-dataset}]\item[{\em \_\-\_\-adapter}]\end{DoxyParams}
+
+
+\subsection{関数}
+\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a6e19d27b72776440160c0cc3a5b17795}{
+\index{lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}!contains@{contains}}
+\index{contains@{contains}!lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}bool lazurite::relation::sqlclient::SQLStorage::contains (DataTable {\em \_\-\_\-table})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a6e19d27b72776440160c0cc3a5b17795}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-table}]\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a57c78a427b2cb14056772f1239d3b45c}{
+\index{lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}!contains@{contains}}
+\index{contains@{contains}!lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}bool lazurite::relation::sqlclient::SQLStorage::contains (string {\em \_\-\_\-table\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a57c78a427b2cb14056772f1239d3b45c}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-table\_\-name}]\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+\hyperlink{interfacelazurite_1_1common_1_1_i_table_storage_a2645db3c1b04ecd4e76f00edaf65ba03}{lazurite::common::ITableStorage}を実装しています。\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a7119dd1b3a9d48005c7f44132fb2c0c3}{
+\index{lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}!fetch@{fetch}}
+\index{fetch@{fetch}!lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}}
+\subsubsection[{fetch}]{\setlength{\rightskip}{0pt plus 5cm}DataTable lazurite::relation::sqlclient::SQLStorage::fetch (string {\em \_\-\_\-table\_\-name}, \/  string {\em \_\-\_\-sql\_\-query}, \/  params SqlParameter\mbox{[}$\,$\mbox{]} {\em \_\-\_\-palams})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a7119dd1b3a9d48005c7f44132fb2c0c3}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-table\_\-name}]\item[{\em \_\-\_\-sql\_\-query}]\item[{\em \_\-\_\-palams}]\end{DoxyParams}
+\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a9c45c2be1c07d8c13d735dfc62a765c3}{
+\index{lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}!fetch@{fetch}}
+\index{fetch@{fetch}!lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}}
+\subsubsection[{fetch}]{\setlength{\rightskip}{0pt plus 5cm}DataTable lazurite::relation::sqlclient::SQLStorage::fetch (string {\em \_\-\_\-table\_\-name}, \/  string {\em \_\-\_\-sql\_\-query})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a9c45c2be1c07d8c13d735dfc62a765c3}
+
+
+\hyperlink{interfacelazurite_1_1common_1_1_i_table_storage_a2607a18e5f7931dfc5ecacbc21f077e3}{lazurite::common::ITableStorage}を実装しています。\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_ab02cfadf22bbfed1c30cc70463161293}{
+\index{lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}!fetch@{fetch}}
+\index{fetch@{fetch}!lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}}
+\subsubsection[{fetch}]{\setlength{\rightskip}{0pt plus 5cm}DataTable lazurite::relation::sqlclient::SQLStorage::fetch (string {\em \_\-\_\-table\_\-name}, \/  SqlCommand {\em \_\-\_\-command})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_ab02cfadf22bbfed1c30cc70463161293}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-table\_\-name}]\item[{\em \_\-\_\-command}]\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a808b3cf0fa1b77858d07792d4a6c78d1}{
+\index{lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}!getConnection@{getConnection}}
+\index{getConnection@{getConnection}!lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}}
+\subsubsection[{getConnection}]{\setlength{\rightskip}{0pt plus 5cm}SqlConnection lazurite::relation::sqlclient::SQLStorage::getConnection ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a808b3cf0fa1b77858d07792d4a6c78d1}
+
+
+\hyperlink{interfacelazurite_1_1relation_1_1sqlclient_1_1_s_q_l_adapter_a9749401dc1c4a2334cdb18a5b32f32e9}{lazurite::relation::sqlclient::SQLAdapter}を実装しています。\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a51138a6b8e2e5c1c30b92a0eb02c0550}{
+\index{lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}!indexOf@{indexOf}}
+\index{indexOf@{indexOf}!lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}}
+\subsubsection[{indexOf}]{\setlength{\rightskip}{0pt plus 5cm}int lazurite::relation::sqlclient::SQLStorage::indexOf (string {\em \_\-\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a51138a6b8e2e5c1c30b92a0eb02c0550}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-name}]\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+\hyperlink{interfacelazurite_1_1common_1_1_i_table_storage_af50cc04c6deb3b470182f1f076355526}{lazurite::common::ITableStorage}を実装しています。\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a74de1ca5742b268f8d9bcaadfc88fa0f}{
+\index{lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}!invoke\_\-table@{invoke\_\-table}}
+\index{invoke\_\-table@{invoke\_\-table}!lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}}
+\subsubsection[{invoke\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::relation::sqlclient::SQLStorage::invoke\_\-table (lazurite.common.TableInvoker {\em \_\-\_\-invoker})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a74de1ca5742b268f8d9bcaadfc88fa0f}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-name}]\item[{\em \_\-\_\-invoker}]\end{DoxyParams}
+\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a00e7725dfa5e9758202a22b6a8f816db}{
+\index{lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}!remove@{remove}}
+\index{remove@{remove}!lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::relation::sqlclient::SQLStorage::remove (string {\em \_\-\_\-removed\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a00e7725dfa5e9758202a22b6a8f816db}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-removed\_\-name}]\end{DoxyParams}
+
+
+\hyperlink{interfacelazurite_1_1common_1_1_i_table_storage_abb90f2c62e425951cebd5cd5067a005a}{lazurite::common::ITableStorage}を実装しています。
+
+\subsection{プロパティ}
+\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a1d90faa9bc618b3575713adb41ff7778}{
+\index{lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}!arrowAppend@{arrowAppend}}
+\index{arrowAppend@{arrowAppend}!lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}}
+\subsubsection[{arrowAppend}]{\setlength{\rightskip}{0pt plus 5cm}bool lazurite::relation::sqlclient::SQLStorage::arrowAppend\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a1d90faa9bc618b3575713adb41ff7778}
+\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a3ed27c030a7fbff731edbcc65c7f324e}{
+\index{lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}!dataSource@{dataSource}}
+\index{dataSource@{dataSource}!lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}}
+\subsubsection[{dataSource}]{\setlength{\rightskip}{0pt plus 5cm}{\bf common.IADODataSource} lazurite::relation::sqlclient::SQLStorage::dataSource\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a3ed27c030a7fbff731edbcc65c7f324e}
+
+
+\hyperlink{interfacelazurite_1_1relation_1_1sqlclient_1_1_s_q_l_adapter_ab3bcdebb8e41b05a006fde8ce751af03}{lazurite::relation::sqlclient::SQLAdapter}を実装しています。\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a545b620205815ab5d91fddf3910eed88}{
+\index{lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}!length@{length}}
+\index{length@{length}!lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}}
+\subsubsection[{length}]{\setlength{\rightskip}{0pt plus 5cm}int lazurite::relation::sqlclient::SQLStorage::length\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a545b620205815ab5d91fddf3910eed88}
+\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a6a10ad962b51ba757b4664e397a8e31d}{
+\index{lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}!tableNames@{tableNames}}
+\index{tableNames@{tableNames}!lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}}
+\subsubsection[{tableNames}]{\setlength{\rightskip}{0pt plus 5cm}string \mbox{[}$\,$\mbox{]} lazurite::relation::sqlclient::SQLStorage::tableNames\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_a6a10ad962b51ba757b4664e397a8e31d}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_acee858e25cf0ef20c657b89842fa9730}{
+\index{lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}!this@{this}}
+\index{this@{this}!lazurite::relation::sqlclient::SQLStorage@{lazurite::relation::sqlclient::SQLStorage}}
+\subsubsection[{this}]{\setlength{\rightskip}{0pt plus 5cm}DataTable lazurite::relation::sqlclient::SQLStorage::this\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_storage_acee858e25cf0ef20c657b89842fa9730}
+
+\begin{DoxyParams}{引数}
+\item[{\em index}]\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+\hyperlink{interfacelazurite_1_1common_1_1_i_table_storage_adba59c2b0bb2d632fbc2ae087b6b63f3}{lazurite::common::ITableStorage}を実装しています。
+
+このクラスの説明は次のファイルから生成されました:\begin{DoxyCompactItemize}
+\item 
+lib/relation/sqlclient/SQLStorage.cs\end{DoxyCompactItemize}

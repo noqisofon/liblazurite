@@ -1,0 +1,127 @@
+\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source}{
+\section{クラス lazurite::relation::sqlclient::SQLDataSource}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source}\index{lazurite::relation::sqlclient::SQLDataSource@{lazurite::relation::sqlclient::SQLDataSource}}
+}
+
+
+SQL Server 用のデータソースです。.  
+lazurite::relation::sqlclient::SQLDataSourceに対する継承グラフ:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.96454cm]{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source}
+\end{center}
+\end{figure}
+\subsection*{Public メソッド}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_afefa998139f6ea264cb0785270b4c3a0}{SQLDataSource} (string \_\-\_\-initial\_\-catalog)
+\begin{DoxyCompactList}\small\item\em ローカルパソコン用。 \item\end{DoxyCompactList}\item 
+\hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_ad431353000e4dd1934ceb96b2cca46b8}{SQLDataSource} (string \_\-\_\-initial\_\-catalog, string \_\-\_\-data\_\-source)
+\begin{DoxyCompactList}\small\item\em 外パソコン ＆ Windows 認証用。 \item\end{DoxyCompactList}\item 
+\hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_a9a0700de52851d929c639e774616cc9c}{SQLDataSource} (string \_\-\_\-initial\_\-catalog, string \_\-\_\-data\_\-source, bool \_\-\_\-integrated\_\-security)
+\begin{DoxyCompactList}\small\item\em 外パソコン ＆ SQL Sercer 認証用。 \item\end{DoxyCompactList}\item 
+override DbConnection \hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_a99a7bdaa7ca6fce82a89f537a72b2e23}{getConnection} ()
+\begin{DoxyCompactList}\small\item\em この DataSource が表すデータソースへの接続を試みます。 \item\end{DoxyCompactList}\item 
+override DbConnection \hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_a49e9bb60b11cb3d984257702a566e869}{getConnection} (string \_\-\_\-username, string \_\-\_\-password)
+\begin{DoxyCompactList}\small\item\em この DataSource が表すデータソースへの接続を試みます。 \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected メソッド}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_a52af111a1f9f4d865dcd0d84e166543b}{onInfoMessage} (object \_\-\_\-sender, SqlInfoMessageEventArgs \_\-\_\-simergs)
+\begin{DoxyCompactList}\small\item\em イベントハンドラ用メソッドです。 \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{プロパティ}
+\begin{DoxyCompactItemize}
+\item 
+override string \hyperlink{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_afb9ccecb64b77e0ff36d1b55a52af87f}{providerName}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{説明}
+SQL Server 用のデータソースです。. 
+
+\subsection{コンストラクタとデストラクタ}
+\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_afefa998139f6ea264cb0785270b4c3a0}{
+\index{lazurite::relation::sqlclient::SQLDataSource@{lazurite::relation::sqlclient::SQLDataSource}!SQLDataSource@{SQLDataSource}}
+\index{SQLDataSource@{SQLDataSource}!lazurite::relation::sqlclient::SQLDataSource@{lazurite::relation::sqlclient::SQLDataSource}}
+\subsubsection[{SQLDataSource}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::relation::sqlclient::SQLDataSource::SQLDataSource (string {\em \_\-\_\-initial\_\-catalog})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_afefa998139f6ea264cb0785270b4c3a0}
+
+
+ローカルパソコン用。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-initial\_\-catalog}]\end{DoxyParams}
+\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_ad431353000e4dd1934ceb96b2cca46b8}{
+\index{lazurite::relation::sqlclient::SQLDataSource@{lazurite::relation::sqlclient::SQLDataSource}!SQLDataSource@{SQLDataSource}}
+\index{SQLDataSource@{SQLDataSource}!lazurite::relation::sqlclient::SQLDataSource@{lazurite::relation::sqlclient::SQLDataSource}}
+\subsubsection[{SQLDataSource}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::relation::sqlclient::SQLDataSource::SQLDataSource (string {\em \_\-\_\-initial\_\-catalog}, \/  string {\em \_\-\_\-data\_\-source})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_ad431353000e4dd1934ceb96b2cca46b8}
+
+
+外パソコン ＆ Windows 認証用。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-initial\_\-catalog}]\item[{\em \_\-\_\-data\_\-source}]\end{DoxyParams}
+\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_a9a0700de52851d929c639e774616cc9c}{
+\index{lazurite::relation::sqlclient::SQLDataSource@{lazurite::relation::sqlclient::SQLDataSource}!SQLDataSource@{SQLDataSource}}
+\index{SQLDataSource@{SQLDataSource}!lazurite::relation::sqlclient::SQLDataSource@{lazurite::relation::sqlclient::SQLDataSource}}
+\subsubsection[{SQLDataSource}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::relation::sqlclient::SQLDataSource::SQLDataSource (string {\em \_\-\_\-initial\_\-catalog}, \/  string {\em \_\-\_\-data\_\-source}, \/  bool {\em \_\-\_\-integrated\_\-security})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_a9a0700de52851d929c639e774616cc9c}
+
+
+外パソコン ＆ SQL Sercer 認証用。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-initial\_\-catalog}]\item[{\em \_\-\_\-data\_\-source}]\item[{\em \_\-\_\-integrated\_\-security}]\end{DoxyParams}
+
+
+\subsection{関数}
+\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_a49e9bb60b11cb3d984257702a566e869}{
+\index{lazurite::relation::sqlclient::SQLDataSource@{lazurite::relation::sqlclient::SQLDataSource}!getConnection@{getConnection}}
+\index{getConnection@{getConnection}!lazurite::relation::sqlclient::SQLDataSource@{lazurite::relation::sqlclient::SQLDataSource}}
+\subsubsection[{getConnection}]{\setlength{\rightskip}{0pt plus 5cm}override DbConnection lazurite::relation::sqlclient::SQLDataSource::getConnection (string {\em \_\-\_\-username}, \/  string {\em \_\-\_\-password})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_a49e9bb60b11cb3d984257702a566e869}
+
+
+この DataSource が表すデータソースへの接続を試みます。 
+\begin{DoxyParams}{引数}
+\item[{\em username}]ユーザー名。\item[{\em password}]ユーザーのパスワード。\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+\hyperlink{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_a1e828b5e7c1e29b21439d910f05005aa}{lazurite::relation::common::AbstractDataSource}を実装しています。\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_a99a7bdaa7ca6fce82a89f537a72b2e23}{
+\index{lazurite::relation::sqlclient::SQLDataSource@{lazurite::relation::sqlclient::SQLDataSource}!getConnection@{getConnection}}
+\index{getConnection@{getConnection}!lazurite::relation::sqlclient::SQLDataSource@{lazurite::relation::sqlclient::SQLDataSource}}
+\subsubsection[{getConnection}]{\setlength{\rightskip}{0pt plus 5cm}override DbConnection lazurite::relation::sqlclient::SQLDataSource::getConnection ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_a99a7bdaa7ca6fce82a89f537a72b2e23}
+
+
+この DataSource が表すデータソースへの接続を試みます。 \begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+\hyperlink{classlazurite_1_1relation_1_1common_1_1_abstract_data_source_a1706b5b8821b00ad2391dd0fcf98a767}{lazurite::relation::common::AbstractDataSource}を実装しています。\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_a52af111a1f9f4d865dcd0d84e166543b}{
+\index{lazurite::relation::sqlclient::SQLDataSource@{lazurite::relation::sqlclient::SQLDataSource}!onInfoMessage@{onInfoMessage}}
+\index{onInfoMessage@{onInfoMessage}!lazurite::relation::sqlclient::SQLDataSource@{lazurite::relation::sqlclient::SQLDataSource}}
+\subsubsection[{onInfoMessage}]{\setlength{\rightskip}{0pt plus 5cm}virtual void lazurite::relation::sqlclient::SQLDataSource::onInfoMessage (object {\em \_\-\_\-sender}, \/  SqlInfoMessageEventArgs {\em \_\-\_\-simergs})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_a52af111a1f9f4d865dcd0d84e166543b}
+
+
+イベントハンドラ用メソッドです。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-sender}]\item[{\em \_\-\_\-e}]\end{DoxyParams}
+
+
+\subsection{プロパティ}
+\hypertarget{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_afb9ccecb64b77e0ff36d1b55a52af87f}{
+\index{lazurite::relation::sqlclient::SQLDataSource@{lazurite::relation::sqlclient::SQLDataSource}!providerName@{providerName}}
+\index{providerName@{providerName}!lazurite::relation::sqlclient::SQLDataSource@{lazurite::relation::sqlclient::SQLDataSource}}
+\subsubsection[{providerName}]{\setlength{\rightskip}{0pt plus 5cm}override string lazurite::relation::sqlclient::SQLDataSource::providerName\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}}
+\label{classlazurite_1_1relation_1_1sqlclient_1_1_s_q_l_data_source_afb9ccecb64b77e0ff36d1b55a52af87f}
+
+
+\hyperlink{classlazurite_1_1relation_1_1common_1_1_a_d_o_data_source_ad238c170cf658cfdc3a1cf1843aeb956}{lazurite::relation::common::ADODataSource}を再定義しています。
+
+このクラスの説明は次のファイルから生成されました:\begin{DoxyCompactItemize}
+\item 
+lib/relation/sqlclient/SQLDataSource.cs\end{DoxyCompactItemize}

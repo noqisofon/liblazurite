@@ -1,0 +1,131 @@
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_storage}{
+\section{クラス lazurite::etherial::DataBaseStorage}
+\label{classlazurite_1_1etherial_1_1_data_base_storage}\index{lazurite::etherial::DataBaseStorage@{lazurite::etherial::DataBaseStorage}}
+}
+
+
+{\ttfamily \#include $<$DataBaseStorage.cs$>$}\subsection*{Public メソッド}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlazurite_1_1etherial_1_1_data_base_storage_ac3e690a84cb81e9b92054e2c8195c39f}{DataBaseStorage} (string \_\-\_\-database\_\-name)
+\item 
+\hyperlink{classlazurite_1_1etherial_1_1_data_base_storage_a4602bffc4672a2df0292d4a39ee52def}{DataBaseStorage} (string \_\-\_\-database\_\-name, DbDataAdapter \_\-\_\-adapter)
+\item 
+void \hyperlink{classlazurite_1_1etherial_1_1_data_base_storage_aa7942198cc4237c33f8867f717c052bf}{load} (string \_\-\_\-table\_\-name)
+\item 
+void \hyperlink{classlazurite_1_1etherial_1_1_data_base_storage_af54444ae47537e9d80854457a43b0574}{load} (string \_\-\_\-table\_\-name, CommandTextCreator \_\-\_\-creater)
+\item 
+void \hyperlink{classlazurite_1_1etherial_1_1_data_base_storage_a5aa77ecd6cb359e04cd2c12a06827516}{binding} (string \_\-\_\-table\_\-name, BindingSource \_\-\_\-src, DataGridView \_\-\_\-grid)
+\item 
+int \hyperlink{classlazurite_1_1etherial_1_1_data_base_storage_ab5f5412eaedc79f9845ce2e9d085d4cd}{indexOf} (string \_\-\_\-table\_\-name)
+\item 
+bool \hyperlink{classlazurite_1_1etherial_1_1_data_base_storage_acb77614ca2b4481f31c86acaf305acd1}{contains} (string \_\-\_\-table\_\-name)
+\item 
+void \hyperlink{classlazurite_1_1etherial_1_1_data_base_storage_a4dfd199a157268d3e6e0d356b7031bdd}{remove} (string \_\-\_\-table\_\-name)
+\item 
+void \hyperlink{classlazurite_1_1etherial_1_1_data_base_storage_a4799451dac40d2f2939709bb84cb6212}{invoke\_\-table} (TableInvoker \_\-\_\-invoker)
+\end{DoxyCompactItemize}
+\subsection*{プロパティ}
+\begin{DoxyCompactItemize}
+\item 
+DataTable \hyperlink{classlazurite_1_1etherial_1_1_data_base_storage_a651282825d26768b12357ec12f0bf9ab}{this} \mbox{[}int \_\-\_\-index\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{説明}
+\hyperlink{classlazurite_1_1etherial_1_1_data_base_storage}{DataBaseStorage} クラスは、複数のオブジェクトからテーブルを使用できるように、 共通したプロトコルを提供します。 
+
+\subsection{コンストラクタとデストラクタ}
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_storage_ac3e690a84cb81e9b92054e2c8195c39f}{
+\index{lazurite::etherial::DataBaseStorage@{lazurite::etherial::DataBaseStorage}!DataBaseStorage@{DataBaseStorage}}
+\index{DataBaseStorage@{DataBaseStorage}!lazurite::etherial::DataBaseStorage@{lazurite::etherial::DataBaseStorage}}
+\subsubsection[{DataBaseStorage}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::etherial::DataBaseStorage::DataBaseStorage (string {\em \_\-\_\-database\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_storage_ac3e690a84cb81e9b92054e2c8195c39f}
+データベース名を指定して、その名を持つデータセットなどを構築します。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-database\_\-name}]データベース名。 \end{DoxyParams}
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_storage_a4602bffc4672a2df0292d4a39ee52def}{
+\index{lazurite::etherial::DataBaseStorage@{lazurite::etherial::DataBaseStorage}!DataBaseStorage@{DataBaseStorage}}
+\index{DataBaseStorage@{DataBaseStorage}!lazurite::etherial::DataBaseStorage@{lazurite::etherial::DataBaseStorage}}
+\subsubsection[{DataBaseStorage}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::etherial::DataBaseStorage::DataBaseStorage (string {\em \_\-\_\-database\_\-name}, \/  DbDataAdapter {\em \_\-\_\-adapter})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_storage_a4602bffc4672a2df0292d4a39ee52def}
+データベース名を指定して、その名を持つデータセットなどを構築します。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-database\_\-name}]データベース名。 \end{DoxyParams}
+
+
+\subsection{関数}
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_storage_a5aa77ecd6cb359e04cd2c12a06827516}{
+\index{lazurite::etherial::DataBaseStorage@{lazurite::etherial::DataBaseStorage}!binding@{binding}}
+\index{binding@{binding}!lazurite::etherial::DataBaseStorage@{lazurite::etherial::DataBaseStorage}}
+\subsubsection[{binding}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::etherial::DataBaseStorage::binding (string {\em \_\-\_\-table\_\-name}, \/  BindingSource {\em \_\-\_\-src}, \/  DataGridView {\em \_\-\_\-grid})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_storage_a5aa77ecd6cb359e04cd2c12a06827516}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-table\_\-name}]\item[{\em \_\-\_\-src}]\item[{\em \_\-\_\-grid}]\end{DoxyParams}
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_storage_acb77614ca2b4481f31c86acaf305acd1}{
+\index{lazurite::etherial::DataBaseStorage@{lazurite::etherial::DataBaseStorage}!contains@{contains}}
+\index{contains@{contains}!lazurite::etherial::DataBaseStorage@{lazurite::etherial::DataBaseStorage}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}bool lazurite::etherial::DataBaseStorage::contains (string {\em \_\-\_\-table\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_storage_acb77614ca2b4481f31c86acaf305acd1}
+指定されたテーブル名があるかどうか調べます。 \hypertarget{classlazurite_1_1etherial_1_1_data_base_storage_ab5f5412eaedc79f9845ce2e9d085d4cd}{
+\index{lazurite::etherial::DataBaseStorage@{lazurite::etherial::DataBaseStorage}!indexOf@{indexOf}}
+\index{indexOf@{indexOf}!lazurite::etherial::DataBaseStorage@{lazurite::etherial::DataBaseStorage}}
+\subsubsection[{indexOf}]{\setlength{\rightskip}{0pt plus 5cm}int lazurite::etherial::DataBaseStorage::indexOf (string {\em \_\-\_\-table\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_storage_ab5f5412eaedc79f9845ce2e9d085d4cd}
+指定されたテーブル名のテーブルのインデックス番号を返します。 \hypertarget{classlazurite_1_1etherial_1_1_data_base_storage_a4799451dac40d2f2939709bb84cb6212}{
+\index{lazurite::etherial::DataBaseStorage@{lazurite::etherial::DataBaseStorage}!invoke\_\-table@{invoke\_\-table}}
+\index{invoke\_\-table@{invoke\_\-table}!lazurite::etherial::DataBaseStorage@{lazurite::etherial::DataBaseStorage}}
+\subsubsection[{invoke\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::etherial::DataBaseStorage::invoke\_\-table (TableInvoker {\em \_\-\_\-invoker})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_storage_a4799451dac40d2f2939709bb84cb6212}
+指定されたテーブルをデリゲートに渡します。 
+\begin{DoxyParams}{引数}
+\item[{\em テーブル名。}]\item[{\em テーブルに向かって行う処理。}]\end{DoxyParams}
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_storage_af54444ae47537e9d80854457a43b0574}{
+\index{lazurite::etherial::DataBaseStorage@{lazurite::etherial::DataBaseStorage}!load@{load}}
+\index{load@{load}!lazurite::etherial::DataBaseStorage@{lazurite::etherial::DataBaseStorage}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::etherial::DataBaseStorage::load (string {\em \_\-\_\-table\_\-name}, \/  CommandTextCreator {\em \_\-\_\-creater})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_storage_af54444ae47537e9d80854457a43b0574}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-table\_\-name}]\item[{\em \_\-\_\-creater}]\end{DoxyParams}
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_storage_aa7942198cc4237c33f8867f717c052bf}{
+\index{lazurite::etherial::DataBaseStorage@{lazurite::etherial::DataBaseStorage}!load@{load}}
+\index{load@{load}!lazurite::etherial::DataBaseStorage@{lazurite::etherial::DataBaseStorage}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::etherial::DataBaseStorage::load (string {\em \_\-\_\-table\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_storage_aa7942198cc4237c33f8867f717c052bf}
+指定されたテーブル名を受け取ってデータベースからテーブルを読み込みます。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-table\_\-name}]読み込みたいテーブル名。 \end{DoxyParams}
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_storage_a4dfd199a157268d3e6e0d356b7031bdd}{
+\index{lazurite::etherial::DataBaseStorage@{lazurite::etherial::DataBaseStorage}!remove@{remove}}
+\index{remove@{remove}!lazurite::etherial::DataBaseStorage@{lazurite::etherial::DataBaseStorage}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::etherial::DataBaseStorage::remove (string {\em \_\-\_\-table\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_storage_a4dfd199a157268d3e6e0d356b7031bdd}
+指定されたテーブルを削除します。 
+
+\subsection{プロパティ}
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_storage_a651282825d26768b12357ec12f0bf9ab}{
+\index{lazurite::etherial::DataBaseStorage@{lazurite::etherial::DataBaseStorage}!this@{this}}
+\index{this@{this}!lazurite::etherial::DataBaseStorage@{lazurite::etherial::DataBaseStorage}}
+\subsubsection[{this}]{\setlength{\rightskip}{0pt plus 5cm}DataTable lazurite::etherial::DataBaseStorage::this\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_storage_a651282825d26768b12357ec12f0bf9ab}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-index}]\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-table\_\-name}]\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+
+
+このクラスの説明は次のファイルから生成されました:\begin{DoxyCompactItemize}
+\item 
+lib/etherial/DataBaseStorage.cs\end{DoxyCompactItemize}

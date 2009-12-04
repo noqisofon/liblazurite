@@ -1,0 +1,176 @@
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_loader}{
+\section{クラス lazurite::etherial::DataBaseLoader}
+\label{classlazurite_1_1etherial_1_1_data_base_loader}\index{lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}}
+}
+
+
+\hyperlink{classlazurite_1_1etherial_1_1_data_base_loader}{DataBaseLoader} クラスは、データアダプタを使用して、データベースから データセットに簡単にロードする機能を提供します。.  
+\subsection*{Public メソッド}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlazurite_1_1etherial_1_1_data_base_loader_a1008de3808b48a9415aeddb84b506e7a}{DataBaseLoader} (DbDataAdapter \_\-\_\-adapter, DataSet \_\-\_\-dataset)
+\item 
+\hyperlink{classlazurite_1_1etherial_1_1_data_base_loader_a765c3fc303a0faeb62d3152947da5558}{DataBaseLoader} (DataSet \_\-\_\-dataset, int \_\-\_\-timeOut)
+\item 
+\hyperlink{classlazurite_1_1etherial_1_1_data_base_loader_aa2a43059ad5d48167b70f83850b5cee0}{DataBaseLoader} (DbDataAdapter \_\-\_\-adapter, string \_\-\_\-database\_\-name)
+\item 
+\hyperlink{classlazurite_1_1etherial_1_1_data_base_loader_abaac2cdc7ca5defd6e0bc239ddfb17f7}{DataBaseLoader} (DbDataAdapter \_\-\_\-adapter, DataSet \_\-\_\-dataset, int \_\-\_\-timeOut, string \_\-\_\-database\_\-name)
+\item 
+bool \hyperlink{classlazurite_1_1etherial_1_1_data_base_loader_a5f042af6f723cbf7f7b74a7d6290ba27}{load} (string \_\-\_\-table\_\-name)
+\item 
+bool \hyperlink{classlazurite_1_1etherial_1_1_data_base_loader_afbe7dcab9574865fb2e22d87e5649254}{load} (string \_\-\_\-table\_\-name, CommandTextCreator \_\-\_\-block)
+\item 
+void \hyperlink{classlazurite_1_1etherial_1_1_data_base_loader_ab727726afae6a0b2a05651462231fb42}{binding} (BindingSource \_\-\_\-bindsrc, DataGridView \_\-\_\-gridview)
+\begin{DoxyCompactList}\small\item\em 前にロードしたテーブルを、データグリッドにバインディングします。 \item\end{DoxyCompactList}\item 
+void \hyperlink{classlazurite_1_1etherial_1_1_data_base_loader_ab776f005f4e3a8815485b4bbb48ccc88}{binding} (BindingSource \_\-\_\-bindsrc, DataGridView \_\-\_\-gridview, string \_\-\_\-table\_\-name)
+\item 
+void \hyperlink{classlazurite_1_1etherial_1_1_data_base_loader_a3f5190a29a3e7c70ff4411ad671a5cc6}{update} (string\mbox{[}$\,$\mbox{]} \_\-\_\-query\_\-lines, string \_\-\_\-table\_\-name)
+\item 
+void \hyperlink{classlazurite_1_1etherial_1_1_data_base_loader_ad1581f164cdf6a476d1bc1287169ea80}{update} (string \_\-\_\-query\_\-text, string \_\-\_\-table\_\-name)
+\item 
+void \hyperlink{classlazurite_1_1etherial_1_1_data_base_loader_a921d0ae9b16f7a3f79cc1a449548c12f}{update} (string\mbox{[}$\,$\mbox{]} \_\-\_\-query\_\-lines, string \_\-\_\-table\_\-name, BindingSource \_\-\_\-bindsrc)
+\item 
+void \hyperlink{classlazurite_1_1etherial_1_1_data_base_loader_adb2ac9982ec750d6535e5b4a29ed40a6}{update} (string \_\-\_\-query\_\-text, string \_\-\_\-table\_\-name, BindingSource \_\-\_\-bindsrc)
+\end{DoxyCompactItemize}
+\subsection*{プロパティ}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classlazurite_1_1etherial_1_1_data_base_loader_a7400e5d129dc9a8927b1178e484165a4}{timeOut}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em コマンド実行時の終了待機時間にアクセスします。 \item\end{DoxyCompactList}\item 
+string\mbox{[}$\,$\mbox{]} \hyperlink{classlazurite_1_1etherial_1_1_data_base_loader_a247dd943cfe6c7618ff83dde4170451d}{tableNames}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em これまで読み込んだテーブル名を配列にして返します。 \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{説明}
+\hyperlink{classlazurite_1_1etherial_1_1_data_base_loader}{DataBaseLoader} クラスは、データアダプタを使用して、データベースから データセットに簡単にロードする機能を提供します。. 
+
+\subsection{コンストラクタとデストラクタ}
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_loader_a1008de3808b48a9415aeddb84b506e7a}{
+\index{lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}!DataBaseLoader@{DataBaseLoader}}
+\index{DataBaseLoader@{DataBaseLoader}!lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}}
+\subsubsection[{DataBaseLoader}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::etherial::DataBaseLoader::DataBaseLoader (DbDataAdapter {\em \_\-\_\-adapter}, \/  DataSet {\em \_\-\_\-dataset})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_loader_a1008de3808b48a9415aeddb84b506e7a}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-adapter}]\item[{\em \_\-\_\-dataset}]\end{DoxyParams}
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_loader_a765c3fc303a0faeb62d3152947da5558}{
+\index{lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}!DataBaseLoader@{DataBaseLoader}}
+\index{DataBaseLoader@{DataBaseLoader}!lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}}
+\subsubsection[{DataBaseLoader}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::etherial::DataBaseLoader::DataBaseLoader (DataSet {\em \_\-\_\-dataset}, \/  int {\em \_\-\_\-timeOut})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_loader_a765c3fc303a0faeb62d3152947da5558}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-adapter}]\item[{\em \_\-\_\-dataset}]\end{DoxyParams}
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_loader_aa2a43059ad5d48167b70f83850b5cee0}{
+\index{lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}!DataBaseLoader@{DataBaseLoader}}
+\index{DataBaseLoader@{DataBaseLoader}!lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}}
+\subsubsection[{DataBaseLoader}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::etherial::DataBaseLoader::DataBaseLoader (DbDataAdapter {\em \_\-\_\-adapter}, \/  string {\em \_\-\_\-database\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_loader_aa2a43059ad5d48167b70f83850b5cee0}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-adapter}]\item[{\em \_\-\_\-dataset}]\item[{\em \_\-\_\-database\_\-name}]\end{DoxyParams}
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_loader_abaac2cdc7ca5defd6e0bc239ddfb17f7}{
+\index{lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}!DataBaseLoader@{DataBaseLoader}}
+\index{DataBaseLoader@{DataBaseLoader}!lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}}
+\subsubsection[{DataBaseLoader}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::etherial::DataBaseLoader::DataBaseLoader (DbDataAdapter {\em \_\-\_\-adapter}, \/  DataSet {\em \_\-\_\-dataset}, \/  int {\em \_\-\_\-timeOut}, \/  string {\em \_\-\_\-database\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_loader_abaac2cdc7ca5defd6e0bc239ddfb17f7}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-adapter}]\item[{\em \_\-\_\-dataset}]\item[{\em \_\-\_\-database\_\-name}]\end{DoxyParams}
+
+
+\subsection{関数}
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_loader_ab776f005f4e3a8815485b4bbb48ccc88}{
+\index{lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}!binding@{binding}}
+\index{binding@{binding}!lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}}
+\subsubsection[{binding}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::etherial::DataBaseLoader::binding (BindingSource {\em \_\-\_\-bindsrc}, \/  DataGridView {\em \_\-\_\-gridview}, \/  string {\em \_\-\_\-table\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_loader_ab776f005f4e3a8815485b4bbb48ccc88}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-bindsrc}]\item[{\em \_\-\_\-gridview}]\item[{\em \_\-\_\-table\_\-name}]\end{DoxyParams}
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_loader_ab727726afae6a0b2a05651462231fb42}{
+\index{lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}!binding@{binding}}
+\index{binding@{binding}!lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}}
+\subsubsection[{binding}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::etherial::DataBaseLoader::binding (BindingSource {\em \_\-\_\-bindsrc}, \/  DataGridView {\em \_\-\_\-gridview})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_loader_ab727726afae6a0b2a05651462231fb42}
+
+
+前にロードしたテーブルを、データグリッドにバインディングします。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-bindsrc}]\item[{\em \_\-\_\-gridview}]\end{DoxyParams}
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_loader_afbe7dcab9574865fb2e22d87e5649254}{
+\index{lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}!load@{load}}
+\index{load@{load}!lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}bool lazurite::etherial::DataBaseLoader::load (string {\em \_\-\_\-table\_\-name}, \/  CommandTextCreator {\em \_\-\_\-block})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_loader_afbe7dcab9574865fb2e22d87e5649254}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-table\_\-name}]\item[{\em \_\-\_\-block}]\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_loader_a5f042af6f723cbf7f7b74a7d6290ba27}{
+\index{lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}!load@{load}}
+\index{load@{load}!lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}bool lazurite::etherial::DataBaseLoader::load (string {\em \_\-\_\-table\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_loader_a5f042af6f723cbf7f7b74a7d6290ba27}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-table\_\-name}]\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+
+\end{DoxyReturn}
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_loader_adb2ac9982ec750d6535e5b4a29ed40a6}{
+\index{lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}!update@{update}}
+\index{update@{update}!lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::etherial::DataBaseLoader::update (string {\em \_\-\_\-query\_\-text}, \/  string {\em \_\-\_\-table\_\-name}, \/  BindingSource {\em \_\-\_\-bindsrc})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_loader_adb2ac9982ec750d6535e5b4a29ed40a6}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-query\_\-text}]\item[{\em \_\-\_\-table\_\-name}]\item[{\em \_\-\_\-bindsrc}]\end{DoxyParams}
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_loader_a921d0ae9b16f7a3f79cc1a449548c12f}{
+\index{lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}!update@{update}}
+\index{update@{update}!lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::etherial::DataBaseLoader::update (string\mbox{[}$\,$\mbox{]} {\em \_\-\_\-query\_\-lines}, \/  string {\em \_\-\_\-table\_\-name}, \/  BindingSource {\em \_\-\_\-bindsrc})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_loader_a921d0ae9b16f7a3f79cc1a449548c12f}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-query\_\-lines}]\item[{\em \_\-\_\-table\_\-name}]\item[{\em \_\-\_\-bindsrc}]\end{DoxyParams}
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_loader_ad1581f164cdf6a476d1bc1287169ea80}{
+\index{lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}!update@{update}}
+\index{update@{update}!lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::etherial::DataBaseLoader::update (string {\em \_\-\_\-query\_\-text}, \/  string {\em \_\-\_\-table\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_loader_ad1581f164cdf6a476d1bc1287169ea80}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-query\_\-text}]\item[{\em \_\-\_\-table\_\-name}]\end{DoxyParams}
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_loader_a3f5190a29a3e7c70ff4411ad671a5cc6}{
+\index{lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}!update@{update}}
+\index{update@{update}!lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::etherial::DataBaseLoader::update (string\mbox{[}$\,$\mbox{]} {\em \_\-\_\-query\_\-lines}, \/  string {\em \_\-\_\-table\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_loader_a3f5190a29a3e7c70ff4411ad671a5cc6}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-query\_\-lines}]\item[{\em \_\-\_\-table\_\-name}]\end{DoxyParams}
+
+
+\subsection{プロパティ}
+\hypertarget{classlazurite_1_1etherial_1_1_data_base_loader_a247dd943cfe6c7618ff83dde4170451d}{
+\index{lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}!tableNames@{tableNames}}
+\index{tableNames@{tableNames}!lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}}
+\subsubsection[{tableNames}]{\setlength{\rightskip}{0pt plus 5cm}string \mbox{[}$\,$\mbox{]} lazurite::etherial::DataBaseLoader::tableNames\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_loader_a247dd943cfe6c7618ff83dde4170451d}
+
+
+これまで読み込んだテーブル名を配列にして返します。 \hypertarget{classlazurite_1_1etherial_1_1_data_base_loader_a7400e5d129dc9a8927b1178e484165a4}{
+\index{lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}!timeOut@{timeOut}}
+\index{timeOut@{timeOut}!lazurite::etherial::DataBaseLoader@{lazurite::etherial::DataBaseLoader}}
+\subsubsection[{timeOut}]{\setlength{\rightskip}{0pt plus 5cm}int lazurite::etherial::DataBaseLoader::timeOut\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_base_loader_a7400e5d129dc9a8927b1178e484165a4}
+
+
+コマンド実行時の終了待機時間にアクセスします。 
+
+このクラスの説明は次のファイルから生成されました:\begin{DoxyCompactItemize}
+\item 
+lib/etherial/DataBaseLoader.cs\end{DoxyCompactItemize}

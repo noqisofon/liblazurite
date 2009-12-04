@@ -1,0 +1,85 @@
+\hypertarget{classlazurite_1_1etherial_1_1_data_grid_view_convertor}{
+\section{クラス lazurite::etherial::DataGridViewConvertor}
+\label{classlazurite_1_1etherial_1_1_data_grid_view_convertor}\index{lazurite::etherial::DataGridViewConvertor@{lazurite::etherial::DataGridViewConvertor}}
+}
+
+
+DataTable から空の DataGridView にデータをコンバートするクラスです。.  
+\subsection*{構成}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classlazurite_1_1etherial_1_1_data_grid_view_convertor_1_1_name_and_header_pair}{NameAndHeaderPair}
+\end{DoxyCompactItemize}
+\subsection*{Public メソッド}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlazurite_1_1etherial_1_1_data_grid_view_convertor_a9357a674989a205c57f5ffe3e3da75f1}{DataGridViewConvertor} (DataGridView \_\-\_\-gridview, string \_\-\_\-table\_\-name)
+\item 
+\hyperlink{classlazurite_1_1etherial_1_1_data_grid_view_convertor_1_1_name_and_header_pair}{NameAndHeaderPair}\mbox{[}$\,$\mbox{]} \hyperlink{classlazurite_1_1etherial_1_1_data_grid_view_convertor_ac7d685e90bd9935c1abf22bffe101c9a}{pairs} ()
+\item 
+void \hyperlink{classlazurite_1_1etherial_1_1_data_grid_view_convertor_a352bd8d95aa50eadf6f3a54c9fe8115c}{binding} (DataTable \_\-\_\-converting\_\-table, binary\_\-cell\_\-filter \_\-\_\-bcfilter)
+\item 
+void \hyperlink{classlazurite_1_1etherial_1_1_data_grid_view_convertor_a158ef6d9f8296448e225e73198431050}{binding} (DataTable \_\-\_\-converting\_\-table, binary\_\-row\_\-filter \_\-\_\-brfilter)
+\item 
+void \hyperlink{classlazurite_1_1etherial_1_1_data_grid_view_convertor_ad89359a56e56dde1ca1f85e7fb3e61bd}{binding} (cell\_\-filter \_\-\_\-cfilter)
+\item 
+\hypertarget{classlazurite_1_1etherial_1_1_data_grid_view_convertor_a4d34d19a4c539d712004ae5e0a265021}{
+delegate void {\bfseries cell\_\-filter} (DataGridViewCell \_\-\_\-cell)}
+\label{classlazurite_1_1etherial_1_1_data_grid_view_convertor_a4d34d19a4c539d712004ae5e0a265021}
+
+\item 
+\hypertarget{classlazurite_1_1etherial_1_1_data_grid_view_convertor_a7364e3af7ed80e698c70d2bd34f7ae37}{
+delegate void {\bfseries binary\_\-cell\_\-filter} (DataGridViewCell \_\-\_\-cell, object \_\-\_\-that)}
+\label{classlazurite_1_1etherial_1_1_data_grid_view_convertor_a7364e3af7ed80e698c70d2bd34f7ae37}
+
+\item 
+\hypertarget{classlazurite_1_1etherial_1_1_data_grid_view_convertor_adc3107229b0253df3a11bf6a05112819}{
+delegate void {\bfseries binary\_\-row\_\-filter} (DataGridViewCell \_\-\_\-cell, DataRow \_\-\_\-row)}
+\label{classlazurite_1_1etherial_1_1_data_grid_view_convertor_adc3107229b0253df3a11bf6a05112819}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{説明}
+DataTable から空の DataGridView にデータをコンバートするクラスです。. 此のクラスは現在(2008-\/11-\/11T)推奨されていません。 Builder シリーズを使ってください。 
+
+\subsection{コンストラクタとデストラクタ}
+\hypertarget{classlazurite_1_1etherial_1_1_data_grid_view_convertor_a9357a674989a205c57f5ffe3e3da75f1}{
+\index{lazurite::etherial::DataGridViewConvertor@{lazurite::etherial::DataGridViewConvertor}!DataGridViewConvertor@{DataGridViewConvertor}}
+\index{DataGridViewConvertor@{DataGridViewConvertor}!lazurite::etherial::DataGridViewConvertor@{lazurite::etherial::DataGridViewConvertor}}
+\subsubsection[{DataGridViewConvertor}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::etherial::DataGridViewConvertor::DataGridViewConvertor (DataGridView {\em \_\-\_\-gridview}, \/  string {\em \_\-\_\-table\_\-name})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_grid_view_convertor_a9357a674989a205c57f5ffe3e3da75f1}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-gridview}]\item[{\em \_\-\_\-table\_\-name}]\end{DoxyParams}
+
+
+\subsection{関数}
+\hypertarget{classlazurite_1_1etherial_1_1_data_grid_view_convertor_ad89359a56e56dde1ca1f85e7fb3e61bd}{
+\index{lazurite::etherial::DataGridViewConvertor@{lazurite::etherial::DataGridViewConvertor}!binding@{binding}}
+\index{binding@{binding}!lazurite::etherial::DataGridViewConvertor@{lazurite::etherial::DataGridViewConvertor}}
+\subsubsection[{binding}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::etherial::DataGridViewConvertor::binding (cell\_\-filter {\em \_\-\_\-cfilter})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_grid_view_convertor_ad89359a56e56dde1ca1f85e7fb3e61bd}
+
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-cfilter}]\end{DoxyParams}
+\hypertarget{classlazurite_1_1etherial_1_1_data_grid_view_convertor_a158ef6d9f8296448e225e73198431050}{
+\index{lazurite::etherial::DataGridViewConvertor@{lazurite::etherial::DataGridViewConvertor}!binding@{binding}}
+\index{binding@{binding}!lazurite::etherial::DataGridViewConvertor@{lazurite::etherial::DataGridViewConvertor}}
+\subsubsection[{binding}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::etherial::DataGridViewConvertor::binding (DataTable {\em \_\-\_\-converting\_\-table}, \/  binary\_\-row\_\-filter {\em \_\-\_\-brfilter})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_grid_view_convertor_a158ef6d9f8296448e225e73198431050}
+指定された DataTable を元に、行を作成します。 \hypertarget{classlazurite_1_1etherial_1_1_data_grid_view_convertor_a352bd8d95aa50eadf6f3a54c9fe8115c}{
+\index{lazurite::etherial::DataGridViewConvertor@{lazurite::etherial::DataGridViewConvertor}!binding@{binding}}
+\index{binding@{binding}!lazurite::etherial::DataGridViewConvertor@{lazurite::etherial::DataGridViewConvertor}}
+\subsubsection[{binding}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::etherial::DataGridViewConvertor::binding (DataTable {\em \_\-\_\-converting\_\-table}, \/  binary\_\-cell\_\-filter {\em \_\-\_\-bcfilter})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_grid_view_convertor_a352bd8d95aa50eadf6f3a54c9fe8115c}
+指定された DataTable を元に、行を作成します。 \hypertarget{classlazurite_1_1etherial_1_1_data_grid_view_convertor_ac7d685e90bd9935c1abf22bffe101c9a}{
+\index{lazurite::etherial::DataGridViewConvertor@{lazurite::etherial::DataGridViewConvertor}!pairs@{pairs}}
+\index{pairs@{pairs}!lazurite::etherial::DataGridViewConvertor@{lazurite::etherial::DataGridViewConvertor}}
+\subsubsection[{pairs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf NameAndHeaderPair} \mbox{[}$\,$\mbox{]} lazurite::etherial::DataGridViewConvertor::pairs ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1etherial_1_1_data_grid_view_convertor_ac7d685e90bd9935c1abf22bffe101c9a}
+カラム名と、カラムのヘッダテキストをペアにした \hyperlink{classlazurite_1_1etherial_1_1_data_grid_view_convertor_1_1_name_and_header_pair}{NameAndHeaderPair} の配列を作成して返します。 
+
+このクラスの説明は次のファイルから生成されました:\begin{DoxyCompactItemize}
+\item 
+lib/etherial/DataGridViewConvertor.cs\end{DoxyCompactItemize}

@@ -1,0 +1,568 @@
+<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>lazurite: クラス lazurite::etherial::DataBaseLoader</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.6.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><b>lazurite</b>::<b>etherial</b>::<a class="el" href="classlazurite_1_1etherial_1_1_data_base_loader.html">DataBaseLoader</a>
+  </div>
+</div>
+<div class="contents">
+<h1>クラス lazurite::etherial::DataBaseLoader</h1><!-- doxytag: class="lazurite::etherial::DataBaseLoader" -->
+<p><a class="el" href="classlazurite_1_1etherial_1_1_data_base_loader.html" title="DataBaseLoader クラスは、データアダプタを使用して、データベースから...">DataBaseLoader</a> クラスは、データアダプタを使用して、データベースから データセットに簡単にロードする機能を提供します。.  
+<a href="#_details">[詳細]</a></p>
+
+<p><a href="classlazurite_1_1etherial_1_1_data_base_loader-members.html">すべてのメンバ一覧</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlazurite_1_1etherial_1_1_data_base_loader.html#a1008de3808b48a9415aeddb84b506e7a">DataBaseLoader</a> (DbDataAdapter __adapter, DataSet __dataset)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlazurite_1_1etherial_1_1_data_base_loader.html#a765c3fc303a0faeb62d3152947da5558">DataBaseLoader</a> (DataSet __dataset, int __timeOut)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlazurite_1_1etherial_1_1_data_base_loader.html#aa2a43059ad5d48167b70f83850b5cee0">DataBaseLoader</a> (DbDataAdapter __adapter, string __database_name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlazurite_1_1etherial_1_1_data_base_loader.html#abaac2cdc7ca5defd6e0bc239ddfb17f7">DataBaseLoader</a> (DbDataAdapter __adapter, DataSet __dataset, int __timeOut, string __database_name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlazurite_1_1etherial_1_1_data_base_loader.html#a5f042af6f723cbf7f7b74a7d6290ba27">load</a> (string __table_name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlazurite_1_1etherial_1_1_data_base_loader.html#afbe7dcab9574865fb2e22d87e5649254">load</a> (string __table_name, CommandTextCreator __block)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlazurite_1_1etherial_1_1_data_base_loader.html#ab727726afae6a0b2a05651462231fb42">binding</a> (BindingSource __bindsrc, DataGridView __gridview)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">前にロードしたテーブルを、データグリッドにバインディングします。  <a href="#ab727726afae6a0b2a05651462231fb42"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlazurite_1_1etherial_1_1_data_base_loader.html#ab776f005f4e3a8815485b4bbb48ccc88">binding</a> (BindingSource __bindsrc, DataGridView __gridview, string __table_name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlazurite_1_1etherial_1_1_data_base_loader.html#a3f5190a29a3e7c70ff4411ad671a5cc6">update</a> (string[] __query_lines, string __table_name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlazurite_1_1etherial_1_1_data_base_loader.html#ad1581f164cdf6a476d1bc1287169ea80">update</a> (string __query_text, string __table_name)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlazurite_1_1etherial_1_1_data_base_loader.html#a921d0ae9b16f7a3f79cc1a449548c12f">update</a> (string[] __query_lines, string __table_name, BindingSource __bindsrc)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlazurite_1_1etherial_1_1_data_base_loader.html#adb2ac9982ec750d6535e5b4a29ed40a6">update</a> (string __query_text, string __table_name, BindingSource __bindsrc)</td></tr>
+<tr><td colspan="2"><h2>プロパティ</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlazurite_1_1etherial_1_1_data_base_loader.html#a7400e5d129dc9a8927b1178e484165a4">timeOut</a><code> [get, set]</code></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">コマンド実行時の終了待機時間にアクセスします。  <a href="#a7400e5d129dc9a8927b1178e484165a4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">string[]&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlazurite_1_1etherial_1_1_data_base_loader.html#a247dd943cfe6c7618ff83dde4170451d">tableNames</a><code> [get]</code></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">これまで読み込んだテーブル名を配列にして返します。  <a href="#a247dd943cfe6c7618ff83dde4170451d"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>説明</h2>
+<p><a class="el" href="classlazurite_1_1etherial_1_1_data_base_loader.html" title="DataBaseLoader クラスは、データアダプタを使用して、データベースから...">DataBaseLoader</a> クラスは、データアダプタを使用して、データベースから データセットに簡単にロードする機能を提供します。. </p>
+<hr/><h2>コンストラクタとデストラクタ</h2>
+<a class="anchor" id="a1008de3808b48a9415aeddb84b506e7a"></a><!-- doxytag: member="lazurite::etherial::DataBaseLoader::DataBaseLoader" ref="a1008de3808b48a9415aeddb84b506e7a" args="(DbDataAdapter __adapter, DataSet __dataset)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lazurite::etherial::DataBaseLoader::DataBaseLoader </td>
+          <td>(</td>
+          <td class="paramtype">DbDataAdapter&nbsp;</td>
+          <td class="paramname"> <em>__adapter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataSet&nbsp;</td>
+          <td class="paramname"> <em>__dataset</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>__adapter</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>__dataset</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a765c3fc303a0faeb62d3152947da5558"></a><!-- doxytag: member="lazurite::etherial::DataBaseLoader::DataBaseLoader" ref="a765c3fc303a0faeb62d3152947da5558" args="(DataSet __dataset, int __timeOut)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lazurite::etherial::DataBaseLoader::DataBaseLoader </td>
+          <td>(</td>
+          <td class="paramtype">DataSet&nbsp;</td>
+          <td class="paramname"> <em>__dataset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>__timeOut</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>__adapter</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>__dataset</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa2a43059ad5d48167b70f83850b5cee0"></a><!-- doxytag: member="lazurite::etherial::DataBaseLoader::DataBaseLoader" ref="aa2a43059ad5d48167b70f83850b5cee0" args="(DbDataAdapter __adapter, string __database_name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lazurite::etherial::DataBaseLoader::DataBaseLoader </td>
+          <td>(</td>
+          <td class="paramtype">DbDataAdapter&nbsp;</td>
+          <td class="paramname"> <em>__adapter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>__database_name</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>__adapter</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>__dataset</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>__database_name</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="abaac2cdc7ca5defd6e0bc239ddfb17f7"></a><!-- doxytag: member="lazurite::etherial::DataBaseLoader::DataBaseLoader" ref="abaac2cdc7ca5defd6e0bc239ddfb17f7" args="(DbDataAdapter __adapter, DataSet __dataset, int __timeOut, string __database_name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lazurite::etherial::DataBaseLoader::DataBaseLoader </td>
+          <td>(</td>
+          <td class="paramtype">DbDataAdapter&nbsp;</td>
+          <td class="paramname"> <em>__adapter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataSet&nbsp;</td>
+          <td class="paramname"> <em>__dataset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>__timeOut</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>__database_name</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>__adapter</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>__dataset</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>__database_name</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>関数</h2>
+<a class="anchor" id="ab776f005f4e3a8815485b4bbb48ccc88"></a><!-- doxytag: member="lazurite::etherial::DataBaseLoader::binding" ref="ab776f005f4e3a8815485b4bbb48ccc88" args="(BindingSource __bindsrc, DataGridView __gridview, string __table_name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lazurite::etherial::DataBaseLoader::binding </td>
+          <td>(</td>
+          <td class="paramtype">BindingSource&nbsp;</td>
+          <td class="paramname"> <em>__bindsrc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataGridView&nbsp;</td>
+          <td class="paramname"> <em>__gridview</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>__table_name</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>__bindsrc</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>__gridview</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>__table_name</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab727726afae6a0b2a05651462231fb42"></a><!-- doxytag: member="lazurite::etherial::DataBaseLoader::binding" ref="ab727726afae6a0b2a05651462231fb42" args="(BindingSource __bindsrc, DataGridView __gridview)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lazurite::etherial::DataBaseLoader::binding </td>
+          <td>(</td>
+          <td class="paramtype">BindingSource&nbsp;</td>
+          <td class="paramname"> <em>__bindsrc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataGridView&nbsp;</td>
+          <td class="paramname"> <em>__gridview</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>前にロードしたテーブルを、データグリッドにバインディングします。 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>__bindsrc</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>__gridview</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afbe7dcab9574865fb2e22d87e5649254"></a><!-- doxytag: member="lazurite::etherial::DataBaseLoader::load" ref="afbe7dcab9574865fb2e22d87e5649254" args="(string __table_name, CommandTextCreator __block)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lazurite::etherial::DataBaseLoader::load </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>__table_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CommandTextCreator&nbsp;</td>
+          <td class="paramname"> <em>__block</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>__table_name</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>__block</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5f042af6f723cbf7f7b74a7d6290ba27"></a><!-- doxytag: member="lazurite::etherial::DataBaseLoader::load" ref="a5f042af6f723cbf7f7b74a7d6290ba27" args="(string __table_name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lazurite::etherial::DataBaseLoader::load </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>__table_name</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>__table_name</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>戻り値:</b></dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adb2ac9982ec750d6535e5b4a29ed40a6"></a><!-- doxytag: member="lazurite::etherial::DataBaseLoader::update" ref="adb2ac9982ec750d6535e5b4a29ed40a6" args="(string __query_text, string __table_name, BindingSource __bindsrc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lazurite::etherial::DataBaseLoader::update </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>__query_text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>__table_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BindingSource&nbsp;</td>
+          <td class="paramname"> <em>__bindsrc</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>__query_text</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>__table_name</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>__bindsrc</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a921d0ae9b16f7a3f79cc1a449548c12f"></a><!-- doxytag: member="lazurite::etherial::DataBaseLoader::update" ref="a921d0ae9b16f7a3f79cc1a449548c12f" args="(string[] __query_lines, string __table_name, BindingSource __bindsrc)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lazurite::etherial::DataBaseLoader::update </td>
+          <td>(</td>
+          <td class="paramtype">string[]&nbsp;</td>
+          <td class="paramname"> <em>__query_lines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>__table_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BindingSource&nbsp;</td>
+          <td class="paramname"> <em>__bindsrc</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>__query_lines</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>__table_name</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>__bindsrc</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad1581f164cdf6a476d1bc1287169ea80"></a><!-- doxytag: member="lazurite::etherial::DataBaseLoader::update" ref="ad1581f164cdf6a476d1bc1287169ea80" args="(string __query_text, string __table_name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lazurite::etherial::DataBaseLoader::update </td>
+          <td>(</td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>__query_text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>__table_name</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>__query_text</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>__table_name</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3f5190a29a3e7c70ff4411ad671a5cc6"></a><!-- doxytag: member="lazurite::etherial::DataBaseLoader::update" ref="a3f5190a29a3e7c70ff4411ad671a5cc6" args="(string[] __query_lines, string __table_name)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lazurite::etherial::DataBaseLoader::update </td>
+          <td>(</td>
+          <td class="paramtype">string[]&nbsp;</td>
+          <td class="paramname"> <em>__query_lines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&nbsp;</td>
+          <td class="paramname"> <em>__table_name</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>__query_lines</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>__table_name</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/><h2>プロパティ</h2>
+<a class="anchor" id="a247dd943cfe6c7618ff83dde4170451d"></a><!-- doxytag: member="lazurite::etherial::DataBaseLoader::tableNames" ref="a247dd943cfe6c7618ff83dde4170451d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string [] lazurite::etherial::DataBaseLoader::tableNames<code> [get]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>これまで読み込んだテーブル名を配列にして返します。 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7400e5d129dc9a8927b1178e484165a4"></a><!-- doxytag: member="lazurite::etherial::DataBaseLoader::timeOut" ref="a7400e5d129dc9a8927b1178e484165a4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int lazurite::etherial::DataBaseLoader::timeOut<code> [get, set]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>コマンド実行時の終了待機時間にアクセスします。 </p>
+
+</div>
+</div>
+<hr/>このクラスの説明は次のファイルから生成されました:<ul>
+<li>lib/etherial/DataBaseLoader.cs</li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>プロパティ</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>イベント</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr size="1"/><address style="text-align: right;"><small>lazuriteに対してWed Dec 2 13:41:36 2009に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+</body>
+</html>

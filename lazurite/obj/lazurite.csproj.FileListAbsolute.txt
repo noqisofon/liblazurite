@@ -1,0 +1,10 @@
+C:\home\lib\lazurite\lazurite\obj\Debug\ResolveAssemblyReference.cache
+C:\home\lib\lazurite\lazurite\obj\Debug\lazurite.dll
+C:\home\lib\lazurite\lazurite\bin\Debug\lazurite.dll
+C:\home\lib\lazurite\lazurite\bin\Debug\lazurite.pdb
+C:\home\lib\lazurite\lazurite\obj\Debug\lazurite.pdb
+C:\home\lib\lazurite\lazurite\bin\Release\lazurite.dll
+C:\home\lib\lazurite\lazurite\bin\Release\lazurite.pdb
+C:\home\lib\lazurite\lazurite\obj\Release\ResolveAssemblyReference.cache
+C:\home\lib\lazurite\lazurite\obj\Release\lazurite.dll
+C:\home\lib\lazurite\lazurite\obj\Release\lazurite.pdb

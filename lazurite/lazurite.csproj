@@ -1,0 +1,168 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CC639589-E70D-4DFB-844C-15F7DCB64C8B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>lazurite</RootNamespace>
+    <AssemblyName>lazurite</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>lazurite.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="lib\attitude\CheckGroupMediator.cs" />
+    <Compile Include="lib\common\Storeable.cs" />
+    <Compile Include="lib\pattern\commanding\MacroQueueCommand.cs" />
+    <Compile Include="lib\pattern\visitation\AbstractVisitor.cs" />
+    <Compile Include="lib\pattern\building\AbstractBuilder.cs" />
+    <Compile Include="lib\common\AggregateAdapter.cs" />
+    <Compile Include="lib\common\Algorithms.cs" />
+    <Compile Include="lib\common\Closeable.cs" />
+    <Compile Include="lib\common\CollectionAdapter.cs" />
+    <Compile Include="lib\pattern\building\Director.cs" />
+    <Compile Include="lib\pattern\basics\IBuilder.cs" />
+    <Compile Include="lib\attitude\IFolder.cs" />
+    <Compile Include="lib\common\IStorage.cs" />
+    <Compile Include="lib\common\ITableStorage.cs" />
+    <Compile Include="lib\attitude\IFileNode.cs" />
+    <Compile Include="lib\pattern\basics\IVisitor.cs" />
+    <Compile Include="lib\common\predicate.cs" />
+    <Compile Include="lib\common\Writable.cs" />
+    <Compile Include="lib\etherial\CommandQueue.cs" />
+    <Compile Include="lib\etherial\DataBaceDelegates.cs" />
+    <Compile Include="lib\etherial\DataBaseLoader.cs" />
+    <Compile Include="lib\etherial\DataBaseStorage.cs" />
+    <Compile Include="lib\pattern\building\DataColumnBuilder.cs" />
+    <Compile Include="lib\pattern\building\DataGridViewColumnBuilder.cs" />
+    <Compile Include="lib\etherial\EmptyTableBuilder.cs" />
+    <Compile Include="lib\etherial\InsertCommandFactory.cs" />
+    <Compile Include="lib\etherial\DataGridViewConvertor.cs" />
+    <Compile Include="lib\pattern\basics\ICommand.cs" />
+    <Compile Include="lib\pattern\commanding\MacroStackCommand.cs" />
+    <Compile Include="lib\attitude\Folder.cs" />
+    <Compile Include="lib\pattern\building\FileEnumerater.cs" />
+    <Compile Include="lib\util\FileSearcher.cs" />
+    <Compile Include="lib\pattern\building\FileSystemPacker.cs" />
+    <Compile Include="lib\util\GraphicsHelper.cs" />
+    <Compile Include="lib\pattern\building\HierarchyBuilder.cs" />
+    <Compile Include="lib\attitude\FileNode.cs" />
+    <Compile Include="lib\attitude\AbstractFileNode.cs" />
+    <Compile Include="lib\pattern\building\TreeNodeConvertor.cs" />
+    <Compile Include="lib\pattern\visitation\TreeVisitor.cs" />
+    <Compile Include="lib\util\Writer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="lib\attitude\CollectionAdapter.cs" />
+    <Compile Include="lib\attitude\ListAdapter.cs" />
+    <Compile Include="lib\common\TablePredicate.cs" />
+    <Compile Include="lib\etherial\utils\ConnectionFactory.cs" />
+    <Compile Include="lib\etherial\DataSourceExtracter.cs" />
+    <Compile Include="lib\etherial\OLEConnectionFactory.cs" />
+    <Compile Include="lib\etherial\SQLClientConnectionFactory.cs" />
+    <Compile Include="lib\etherial\utils\DataSourceProvider.cs" />
+    <Compile Include="lib\pattern\basics\Compositable.cs" />
+    <Compile Include="lib\pattern\basics\IMediator.cs" />
+    <Compile Include="lib\pattern\basics\Visitoable.cs" />
+    <Compile Include="lib\pattern\composition\Composite.cs" />
+    <Compile Include="lib\pattern\composition\Node.cs" />
+    <Compile Include="lib\pattern\composition\Tree.cs" />
+    <Compile Include="lib\pattern\mediators\AbstractMediator.cs" />
+    <Compile Include="lib\pattern\basics\IFormatStrategy.cs" />
+    <Compile Include="lib\pattern\strategies\CurrencyFormattingStrategy.cs" />
+    <Compile Include="lib\pattern\strategies\FormattingStrategy.cs" />
+    <Compile Include="lib\relation\common\AbstractDataSource.cs" />
+    <Compile Include="lib\relation\common\ADODataSource.cs" />
+    <Compile Include="lib\relation\common\DBProviderFactory.cs" />
+    <Compile Include="lib\relation\common\IADODataSource.cs" />
+    <Compile Include="lib\relation\common\CommonDataSource.cs" />
+    <Compile Include="lib\relation\common\DataSource.cs" />
+    <Compile Include="lib\relation\oledb\OLEDataSource.cs" />
+    <Compile Include="lib\relation\sqlclient\SQLAdapter.cs" />
+    <Compile Include="lib\relation\sqlclient\SQLDataSource.cs" />
+    <Compile Include="lib\relation\sqlclient\SQLParameterFactory.cs" />
+    <Compile Include="lib\relation\sqlclient\SQLStorage.cs" />
+    <Compile Include="lib\relation\TableStorage.cs" />
+    <Compile Include="lib\util\Enumeration.cs" />
+    <Compile Include="lib\util\NotifyProperty.cs" />
+    <Compile Include="lib\util\Property.cs" />
+    <Compile Include="lib\util\ListProxy.cs" />
+    <Compile Include="lib\util\RoutineWorkerTraits.cs" />
+    <Compile Include="lib\etherial\DataSourceAccessor.cs" />
+    <Compile Include="lib\pattern\basics\IComposite.cs" />
+    <Compile Include="lib\pattern\basics\IStrategy.cs" />
+    <Compile Include="lib\pattern\building\AnyBuilder.cs" />
+    <Compile Include="lib\pattern\building\DataGridViewBuilder.cs" />
+    <Compile Include="lib\pattern\building\DataTableBuilder.cs" />
+    <Compile Include="lib\pattern\building\NilBuilder.cs" />
+    <Compile Include="lib\pattern\commanding\Command.cs" />
+    <Compile Include="lib\pattern\commanding\Executor.cs" />
+    <Compile Include="lib\pattern\commanding\MacroCommand.cs" />
+    <Compile Include="lib\pattern\commanding\NilCommand.cs" />
+    <Compile Include="lib\pattern\factories\AbstractFactory.cs" />
+    <Compile Include="lib\pattern\factories\AbstractPoolingFactory.cs" />
+    <Compile Include="lib\pattern\strategies\Context.cs" />
+    <Compile Include="lib\pattern\visitation\HierarchicalVisitor.cs" />
+    <Compile Include="lib\pattern\visitation\LeafSearchVisitor.cs" />
+    <Compile Include="lib\util\ColorFactory.cs" />
+    <Compile Include="lib\util\DataGridViewMaker.cs" />
+    <Compile Include="lib\util\functor.cs" />
+    <Compile Include="lib\util\Logger.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lazurite.snk" />
+    <Compile Include="lib\common\Event.cs" />
+    <Compile Include="lib\reflection\Property.cs" />
+    <Compile Include="lib\reflection\PropertyCollection.cs" />
+    <Compile Include="lib\reflection\ProteType.cs" />
+    <Compile Include="lib\relation\common\DBProviderFactoreis.cs" />
+    <Compile Include="lib\relation\oledb\OLEDBProviderFactory.cs" />
+    <Compile Include="lib\relation\sqlclient\SQLServerProviderFactory.cs" />
+    <Compile Include="lib\util\microsoft\Integer.cs" />
+    <Compile Include="lib\util\microsoft\win32api\BY_HANDLE_FILE_INFORMATION.cs" />
+    <Compile Include="lib\util\microsoft\win32api\FILETIME.cs" />
+    <Compile Include="lib\util\microsoft\win32api\FileSystem.cs" />
+    <Compile Include="lib\util\searching\FileSearcherEx.cs" />
+    <Compile Include="lib\util\searching\SearcherHandler.cs" />
+    <Compile Include="lib\util\searching\SearchEvent.cs" />
+    <Compile Include="lib\util\subroutines.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

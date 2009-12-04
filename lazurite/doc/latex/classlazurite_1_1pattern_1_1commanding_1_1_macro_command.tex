@@ -1,0 +1,94 @@
+\hypertarget{classlazurite_1_1pattern_1_1commanding_1_1_macro_command}{
+\section{クラス lazurite::pattern::commanding::MacroCommand}
+\label{classlazurite_1_1pattern_1_1commanding_1_1_macro_command}\index{lazurite::pattern::commanding::MacroCommand@{lazurite::pattern::commanding::MacroCommand}}
+}
+
+
+\hyperlink{classlazurite_1_1pattern_1_1commanding_1_1_macro_command}{MacroCommand} クラスは、Command を並べて 連続的に起動させることを目的としたクラスです。.  
+lazurite::pattern::commanding::MacroCommandに対する継承グラフ:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.40252cm]{classlazurite_1_1pattern_1_1commanding_1_1_macro_command}
+\end{center}
+\end{figure}
+\subsection*{Public メソッド}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \hyperlink{classlazurite_1_1pattern_1_1commanding_1_1_macro_command_a3c48d7d5dc8de76e3164794c9ac2f66f}{store} (\hyperlink{classlazurite_1_1pattern_1_1commanding_1_1_command}{Command} \_\-\_\-stored\_\-command)
+\begin{DoxyCompactList}\small\item\em 指定されたコマンドを追加します。 \item\end{DoxyCompactList}\item 
+abstract void \hyperlink{classlazurite_1_1pattern_1_1commanding_1_1_macro_command_afa0d8581adff629f311bd109de0657b5}{storeAll} (\hyperlink{classlazurite_1_1pattern_1_1commanding_1_1_command}{Command}\mbox{[}$\,$\mbox{]} \_\-\_\-stored\_\-commands)
+\begin{DoxyCompactList}\small\item\em 指定されたコマンドの配列から、コマンドを全て追加します。 \item\end{DoxyCompactList}\item 
+abstract void \hyperlink{classlazurite_1_1pattern_1_1commanding_1_1_macro_command_ae042e0f0207269ebb1c201ea39b860fb}{undo} ()
+\begin{DoxyCompactList}\small\item\em コマンドをスキップします。 \item\end{DoxyCompactList}\item 
+abstract void \hyperlink{classlazurite_1_1pattern_1_1commanding_1_1_macro_command_a1ea80d83082f79545609f0c73bda0b7a}{clear} ()
+\begin{DoxyCompactList}\small\item\em ストアしたコマンドを全て削除します。 \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{プロパティ}
+\begin{DoxyCompactItemize}
+\item 
+abstract int \hyperlink{classlazurite_1_1pattern_1_1commanding_1_1_macro_command_ad07b059cd5dce67ac04b21290c29e625}{entries}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em ストアしたコマンドの数を返します。 \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{説明}
+\hyperlink{classlazurite_1_1pattern_1_1commanding_1_1_macro_command}{MacroCommand} クラスは、Command を並べて 連続的に起動させることを目的としたクラスです。. 
+
+\subsection{関数}
+\hypertarget{classlazurite_1_1pattern_1_1commanding_1_1_macro_command_a1ea80d83082f79545609f0c73bda0b7a}{
+\index{lazurite::pattern::commanding::MacroCommand@{lazurite::pattern::commanding::MacroCommand}!clear@{clear}}
+\index{clear@{clear}!lazurite::pattern::commanding::MacroCommand@{lazurite::pattern::commanding::MacroCommand}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}abstract void lazurite::pattern::commanding::MacroCommand::clear ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1commanding_1_1_macro_command_a1ea80d83082f79545609f0c73bda0b7a}
+
+
+ストアしたコマンドを全て削除します。 
+
+\hyperlink{classlazurite_1_1pattern_1_1commanding_1_1_macro_queue_command_a1f76eeaa709e0610212aa983cd0aaf1d}{lazurite::pattern::commanding::MacroQueueCommand}, と \hyperlink{classlazurite_1_1pattern_1_1commanding_1_1_macro_stack_command_ab0861f5fbede48b5d0a452e5727e737d}{lazurite::pattern::commanding::MacroStackCommand}で実装されています。\hypertarget{classlazurite_1_1pattern_1_1commanding_1_1_macro_command_a3c48d7d5dc8de76e3164794c9ac2f66f}{
+\index{lazurite::pattern::commanding::MacroCommand@{lazurite::pattern::commanding::MacroCommand}!store@{store}}
+\index{store@{store}!lazurite::pattern::commanding::MacroCommand@{lazurite::pattern::commanding::MacroCommand}}
+\subsubsection[{store}]{\setlength{\rightskip}{0pt plus 5cm}abstract void lazurite::pattern::commanding::MacroCommand::store ({\bf Command} {\em \_\-\_\-stored\_\-command})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1commanding_1_1_macro_command_a3c48d7d5dc8de76e3164794c9ac2f66f}
+
+
+指定されたコマンドを追加します。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-stored\_\-command}]\end{DoxyParams}
+
+
+\hyperlink{classlazurite_1_1pattern_1_1commanding_1_1_macro_queue_command_a35d54d52f1bfe9dccbd64f0ce9c69585}{lazurite::pattern::commanding::MacroQueueCommand}, と \hyperlink{classlazurite_1_1pattern_1_1commanding_1_1_macro_stack_command_ab18bb77c4756070bdac98a633d80921c}{lazurite::pattern::commanding::MacroStackCommand}で実装されています。\hypertarget{classlazurite_1_1pattern_1_1commanding_1_1_macro_command_afa0d8581adff629f311bd109de0657b5}{
+\index{lazurite::pattern::commanding::MacroCommand@{lazurite::pattern::commanding::MacroCommand}!storeAll@{storeAll}}
+\index{storeAll@{storeAll}!lazurite::pattern::commanding::MacroCommand@{lazurite::pattern::commanding::MacroCommand}}
+\subsubsection[{storeAll}]{\setlength{\rightskip}{0pt plus 5cm}abstract void lazurite::pattern::commanding::MacroCommand::storeAll ({\bf Command}\mbox{[}$\,$\mbox{]} {\em \_\-\_\-stored\_\-commands})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1commanding_1_1_macro_command_afa0d8581adff629f311bd109de0657b5}
+
+
+指定されたコマンドの配列から、コマンドを全て追加します。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-stored\_\-commands}]\end{DoxyParams}
+
+
+\hyperlink{classlazurite_1_1pattern_1_1commanding_1_1_macro_queue_command_aa3b1ac137d9b6f16bf2177a4b7804a23}{lazurite::pattern::commanding::MacroQueueCommand}, と \hyperlink{classlazurite_1_1pattern_1_1commanding_1_1_macro_stack_command_a3f201d6f11d36c2609de0c31562268a8}{lazurite::pattern::commanding::MacroStackCommand}で実装されています。\hypertarget{classlazurite_1_1pattern_1_1commanding_1_1_macro_command_ae042e0f0207269ebb1c201ea39b860fb}{
+\index{lazurite::pattern::commanding::MacroCommand@{lazurite::pattern::commanding::MacroCommand}!undo@{undo}}
+\index{undo@{undo}!lazurite::pattern::commanding::MacroCommand@{lazurite::pattern::commanding::MacroCommand}}
+\subsubsection[{undo}]{\setlength{\rightskip}{0pt plus 5cm}abstract void lazurite::pattern::commanding::MacroCommand::undo ()\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1commanding_1_1_macro_command_ae042e0f0207269ebb1c201ea39b860fb}
+
+
+コマンドをスキップします。 
+
+\hyperlink{classlazurite_1_1pattern_1_1commanding_1_1_macro_queue_command_af5e1197135ed072c1be8c9337949e12d}{lazurite::pattern::commanding::MacroQueueCommand}, と \hyperlink{classlazurite_1_1pattern_1_1commanding_1_1_macro_stack_command_a6c2b7d10e92b11b774b2fcf0365f6a04}{lazurite::pattern::commanding::MacroStackCommand}で実装されています。
+
+\subsection{プロパティ}
+\hypertarget{classlazurite_1_1pattern_1_1commanding_1_1_macro_command_ad07b059cd5dce67ac04b21290c29e625}{
+\index{lazurite::pattern::commanding::MacroCommand@{lazurite::pattern::commanding::MacroCommand}!entries@{entries}}
+\index{entries@{entries}!lazurite::pattern::commanding::MacroCommand@{lazurite::pattern::commanding::MacroCommand}}
+\subsubsection[{entries}]{\setlength{\rightskip}{0pt plus 5cm}abstract int lazurite::pattern::commanding::MacroCommand::entries\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}}
+\label{classlazurite_1_1pattern_1_1commanding_1_1_macro_command_ad07b059cd5dce67ac04b21290c29e625}
+
+
+ストアしたコマンドの数を返します。 
+
+\hyperlink{classlazurite_1_1pattern_1_1commanding_1_1_macro_queue_command_a9537c221d8cf19dbb5de28aafb334a70}{lazurite::pattern::commanding::MacroQueueCommand}, と \hyperlink{classlazurite_1_1pattern_1_1commanding_1_1_macro_stack_command_afdf7dd04a8e9c8ecf69c48af762e23cd}{lazurite::pattern::commanding::MacroStackCommand}で再定義されています。
+
+このクラスの説明は次のファイルから生成されました:\begin{DoxyCompactItemize}
+\item 
+lib/pattern/commanding/MacroCommand.cs\end{DoxyCompactItemize}

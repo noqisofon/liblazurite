@@ -1,0 +1,84 @@
+\hypertarget{interfacelazurite_1_1common_1_1_writable}{
+\section{インタフェース lazurite::common::Writable}
+\label{interfacelazurite_1_1common_1_1_writable}\index{lazurite::common::Writable@{lazurite::common::Writable}}
+}
+lazurite::common::Writableに対する継承グラフ:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{interfacelazurite_1_1common_1_1_writable}
+\end{center}
+\end{figure}
+\subsection*{Public メソッド}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{interfacelazurite_1_1common_1_1_writable_ab08924bf9f4359d839e406135541b1b1}{can\_\-write} ()
+\item 
+void \hyperlink{interfacelazurite_1_1common_1_1_writable_a3e89b67f8716f5b22cdae02e2e552706}{write} (string \_\-\_\-word)
+\item 
+void \hyperlink{interfacelazurite_1_1common_1_1_writable_a3f0f9f537e8a8b3fa86bb13fea5ebef7}{write} (string \_\-\_\-format, params object\mbox{[}$\,$\mbox{]} \_\-\_\-args)
+\item 
+void \hyperlink{interfacelazurite_1_1common_1_1_writable_a8414621bb09a08186a73c2b9d0f60f3e}{writeln} (string \_\-\_\-word)
+\item 
+void \hyperlink{interfacelazurite_1_1common_1_1_writable_a44ea83effb9ad385e07938443a2685bb}{writeln} (string \_\-\_\-format, params object\mbox{[}$\,$\mbox{]} \_\-\_\-args)
+\end{DoxyCompactItemize}
+
+
+\subsection{説明}
+コンテキストに書き込むインターフェースを提供します。 
+
+\subsection{関数}
+\hypertarget{interfacelazurite_1_1common_1_1_writable_ab08924bf9f4359d839e406135541b1b1}{
+\index{lazurite::common::Writable@{lazurite::common::Writable}!can\_\-write@{can\_\-write}}
+\index{can\_\-write@{can\_\-write}!lazurite::common::Writable@{lazurite::common::Writable}}
+\subsubsection[{can\_\-write}]{\setlength{\rightskip}{0pt plus 5cm}bool lazurite::common::Writable::can\_\-write ()}}
+\label{interfacelazurite_1_1common_1_1_writable_ab08924bf9f4359d839e406135541b1b1}
+書き込めるかどうか判別します。 \begin{DoxyReturn}{戻り値}
+書き込むことができたら真。 
+\end{DoxyReturn}
+
+
+\hyperlink{classlazurite_1_1util_1_1_writer_a2bf9621aaa39def983069d70c09e5c6a}{lazurite::util::Writer}で実装されています。\hypertarget{interfacelazurite_1_1common_1_1_writable_a3f0f9f537e8a8b3fa86bb13fea5ebef7}{
+\index{lazurite::common::Writable@{lazurite::common::Writable}!write@{write}}
+\index{write@{write}!lazurite::common::Writable@{lazurite::common::Writable}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::common::Writable::write (string {\em \_\-\_\-format}, \/  params object\mbox{[}$\,$\mbox{]} {\em \_\-\_\-args})}}
+\label{interfacelazurite_1_1common_1_1_writable_a3f0f9f537e8a8b3fa86bb13fea5ebef7}
+指定されたフォーマットを利用して、オブジェクトの文字列表現を書き込みます。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-format}]\mbox{[}in\mbox{]} 書き込む文字列のフォーマット。 \item[{\em \_\-\_\-args}]\mbox{[}in\mbox{]} (オブジェクト型の)可変長引数。 \end{DoxyParams}
+
+
+\hyperlink{classlazurite_1_1util_1_1_writer_ae7beb36247424b99646f4b557fcafa59}{lazurite::util::Writer}で実装されています。\hypertarget{interfacelazurite_1_1common_1_1_writable_a3e89b67f8716f5b22cdae02e2e552706}{
+\index{lazurite::common::Writable@{lazurite::common::Writable}!write@{write}}
+\index{write@{write}!lazurite::common::Writable@{lazurite::common::Writable}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::common::Writable::write (string {\em \_\-\_\-word})}}
+\label{interfacelazurite_1_1common_1_1_writable_a3e89b67f8716f5b22cdae02e2e552706}
+指定された文字列を書き込みます。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-word}]\mbox{[}in\mbox{]} 書き込みたい文字列。 \end{DoxyParams}
+
+
+\hyperlink{classlazurite_1_1util_1_1_writer_af7b90159ade4db522568ba46b3c0a00a}{lazurite::util::Writer}で実装されています。\hypertarget{interfacelazurite_1_1common_1_1_writable_a44ea83effb9ad385e07938443a2685bb}{
+\index{lazurite::common::Writable@{lazurite::common::Writable}!writeln@{writeln}}
+\index{writeln@{writeln}!lazurite::common::Writable@{lazurite::common::Writable}}
+\subsubsection[{writeln}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::common::Writable::writeln (string {\em \_\-\_\-format}, \/  params object\mbox{[}$\,$\mbox{]} {\em \_\-\_\-args})}}
+\label{interfacelazurite_1_1common_1_1_writable_a44ea83effb9ad385e07938443a2685bb}
+指定されたフォーマットを利用して、オブジェクトの文字列表現を書き込み、 末尾に改行を追加します。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-format}]\mbox{[}in\mbox{]} 書き込む文字列のフォーマット。 \item[{\em \_\-\_\-args}]\mbox{[}in\mbox{]} (オブジェクト型の)可変長引数。 \end{DoxyParams}
+
+
+\hyperlink{classlazurite_1_1util_1_1_writer_a94ba55d8211171403215e84c2da2b162}{lazurite::util::Writer}で実装されています。\hypertarget{interfacelazurite_1_1common_1_1_writable_a8414621bb09a08186a73c2b9d0f60f3e}{
+\index{lazurite::common::Writable@{lazurite::common::Writable}!writeln@{writeln}}
+\index{writeln@{writeln}!lazurite::common::Writable@{lazurite::common::Writable}}
+\subsubsection[{writeln}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::common::Writable::writeln (string {\em \_\-\_\-word})}}
+\label{interfacelazurite_1_1common_1_1_writable_a8414621bb09a08186a73c2b9d0f60f3e}
+指定された文字列を書き込み、末尾に改行を追加します。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-word}]\mbox{[}in\mbox{]} 書き込みたい文字列。 \end{DoxyParams}
+
+
+\hyperlink{classlazurite_1_1util_1_1_writer_a38610a24a9bda46a3ba1e01617a4edf5}{lazurite::util::Writer}で実装されています。
+
+このインタフェースの説明は次のファイルから生成されました:\begin{DoxyCompactItemize}
+\item 
+lib/common/Writable.cs\end{DoxyCompactItemize}

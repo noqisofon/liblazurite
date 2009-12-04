@@ -1,0 +1,187 @@
+<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>lazurite: インタフェース テンプレート lazurite::common::Storeable&lt; _Article &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javaScript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onload='searchBox.OnSelectItem(0);'>
+<!-- 作成： Doxygen 1.6.1 -->
+<script type="text/javascript"><!--
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+--></script>
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li class="current"><a href="annotated.html"><span>クラス</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <img id="MSearchSelect" src="search/search.png"
+             onmouseover="return searchBox.OnSearchSelectShow()"
+             onmouseout="return searchBox.OnSearchSelectHide()"
+             alt=""/>
+        <input type="text" id="MSearchField" value="検索" accesskey="S"
+             onfocus="searchBox.OnSearchFieldFocus(true)" 
+             onblur="searchBox.OnSearchFieldFocus(false)" 
+             onkeyup="searchBox.OnSearchFieldChange(event)"/>
+        <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>構成</span></a></li>
+      <li><a href="hierarchy.html"><span>クラス階層</span></a></li>
+      <li><a href="functions.html"><span>構成メンバ</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><b>lazurite</b>::<b>common</b>::<a class="el" href="interfacelazurite_1_1common_1_1_storeable_3_01___article_01_4.html">Storeable&lt; _Article &gt;</a>
+  </div>
+</div>
+<div class="contents">
+<h1>インタフェース テンプレート lazurite::common::Storeable&lt; _Article &gt;</h1><!-- doxytag: class="lazurite::common::Storeable&lt; _Article &gt;" -->
+<p>IStorage インターフェイスと違い、格納する機能だけを持つインターフェイスです。.  
+<a href="#_details">[詳細]</a></p>
+<div class="dynheader">
+lazurite::common::Storeable&lt; _Article &gt;に対する継承グラフ</div>
+<div class="dynsection">
+ <div class="center">
+  <img src="interfacelazurite_1_1common_1_1_storeable_3_01___article_01_4.gif" usemap="#lazurite::common::Storeable&lt; _Article &gt;_map" alt=""/>
+  <map id="lazurite::common::Storeable&lt; _Article &gt;_map" name="lazurite::common::Storeable&lt; _Article &gt;_map">
+<area href="classlazurite_1_1pattern_1_1factories_1_1_abstract_pooling_factory_3_01___target_01_4_1_1_abstra513b29652c04fa77de240c337e958a8d.html" alt="lazurite::pattern::factories::AbstractPoolingFactory&lt; _Target &gt;::AbstractTargetPool&lt; _Article &gt;" shape="rect" coords="0,56,541,80"/>
+</map>
+ </div>
+</div>
+
+<p><a href="interfacelazurite_1_1common_1_1_storeable_3_01___article_01_4-members.html">すべてのメンバ一覧</a></p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2"><h2>Public メソッド</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacelazurite_1_1common_1_1_storeable_3_01___article_01_4.html#ac97bf94535cb939fd12d123afe95fcd4">store</a> (_Article __stored_article)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">指定されたオブジェクトを格納します。  <a href="#ac97bf94535cb939fd12d123afe95fcd4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacelazurite_1_1common_1_1_storeable_3_01___article_01_4.html#ae96e27826bb2346355b9a2c226f80276">storeAll</a> (_Article[] __stored_articles)</td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">指定されたオブジェクトの配列の要素を全て格納します。  <a href="#ae96e27826bb2346355b9a2c226f80276"></a><br/></td></tr>
+<tr><td colspan="2"><h2>プロパティ</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacelazurite_1_1common_1_1_storeable_3_01___article_01_4.html#a3af6673c4d90f17fc0bf623319962692">entries</a><code> [get]</code></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">所有している要素の数を返します。  <a href="#a3af6673c4d90f17fc0bf623319962692"></a><br/></td></tr>
+</table>
+<hr/><a name="_details"></a><h2>説明</h2>
+<h3>template&lt;_Article&gt;<br/>
+ interface lazurite::common::Storeable&lt; _Article &gt;</h3>
+
+<p>IStorage インターフェイスと違い、格納する機能だけを持つインターフェイスです。. </p>
+<dl><dt><b>Template Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>_Article</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<hr/><h2>関数</h2>
+<a class="anchor" id="ac97bf94535cb939fd12d123afe95fcd4"></a><!-- doxytag: member="lazurite::common::Storeable&lt; _Article &gt;::store" ref="ac97bf94535cb939fd12d123afe95fcd4" args="(_Article __stored_article)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;_Article &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void lazurite::common::Storeable&lt; _Article &gt;::store </td>
+          <td>(</td>
+          <td class="paramtype">_Article&nbsp;</td>
+          <td class="paramname"> <em>__stored_article</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>指定されたオブジェクトを格納します。 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>__stored_article</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="classlazurite_1_1pattern_1_1factories_1_1_abstract_pooling_factory_3_01___target_01_4_1_1_abstra513b29652c04fa77de240c337e958a8d.html#a2d11e4ff0f0cdb377a20750454d562b7">lazurite::pattern::factories::AbstractPoolingFactory&lt; _Target &gt;::AbstractTargetPool&lt; _Article &gt;</a>で実装されています。</p>
+
+</div>
+</div>
+<a class="anchor" id="ae96e27826bb2346355b9a2c226f80276"></a><!-- doxytag: member="lazurite::common::Storeable&lt; _Article &gt;::storeAll" ref="ae96e27826bb2346355b9a2c226f80276" args="(_Article[] __stored_articles)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;_Article &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void lazurite::common::Storeable&lt; _Article &gt;::storeAll </td>
+          <td>(</td>
+          <td class="paramtype">_Article[]&nbsp;</td>
+          <td class="paramname"> <em>__stored_articles</em></td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>指定されたオブジェクトの配列の要素を全て格納します。 </p>
+<dl><dt><b>引数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>__stored_articles</em>&nbsp;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="classlazurite_1_1pattern_1_1factories_1_1_abstract_pooling_factory_3_01___target_01_4_1_1_abstra513b29652c04fa77de240c337e958a8d.html#a7b249c9e345439ad7e583aa71225e5fd">lazurite::pattern::factories::AbstractPoolingFactory&lt; _Target &gt;::AbstractTargetPool&lt; _Article &gt;</a>で実装されています。</p>
+
+</div>
+</div>
+<hr/><h2>プロパティ</h2>
+<a class="anchor" id="a3af6673c4d90f17fc0bf623319962692"></a><!-- doxytag: member="lazurite::common::Storeable&lt; _Article &gt;::entries" ref="a3af6673c4d90f17fc0bf623319962692" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;_Article &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int lazurite::common::Storeable&lt; _Article &gt;::entries<code> [get]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>所有している要素の数を返します。 </p>
+
+<p><a class="el" href="classlazurite_1_1pattern_1_1factories_1_1_abstract_pooling_factory_3_01___target_01_4_1_1_abstra513b29652c04fa77de240c337e958a8d.html#aae51e859cb8f4ce8f15dd3db69046711">lazurite::pattern::factories::AbstractPoolingFactory&lt; _Target &gt;::AbstractTargetPool&lt; _Article &gt;</a>で実装されています。</p>
+
+</div>
+</div>
+<hr/>このインタフェースの説明は次のファイルから生成されました:<ul>
+<li>lib/common/Storeable.cs</li>
+</ul>
+</div>
+<!--- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>クラス</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>変数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>プロパティ</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>イベント</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<hr size="1"/><address style="text-align: right;"><small>lazuriteに対してWed Dec 2 13:41:36 2009に生成されました。&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.1 </small></address>
+</body>
+</html>

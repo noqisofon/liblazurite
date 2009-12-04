@@ -1,0 +1,190 @@
+\hypertarget{classlazurite_1_1util_1_1_writer}{
+\section{クラス lazurite::util::Writer}
+\label{classlazurite_1_1util_1_1_writer}\index{lazurite::util::Writer@{lazurite::util::Writer}}
+}
+
+
+\hyperlink{classlazurite_1_1util_1_1_writer}{Writer} クラスは、TextWriter によるファイルストリームへの書き込みへの 簡潔なインターフェイスを提供します。.  
+lazurite::util::Writerに対する継承グラフ:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classlazurite_1_1util_1_1_writer}
+\end{center}
+\end{figure}
+\subsection*{Public メソッド}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classlazurite_1_1util_1_1_writer_a0b9d88e8ee23a4012f73c06808f6d55d}{Writer} (string \_\-\_\-filename)
+\item 
+\hyperlink{classlazurite_1_1util_1_1_writer_a67cd02f6bbf65a91f2613fcd54217254}{Writer} (string \_\-\_\-folderName, string \_\-\_\-filename)
+\item 
+bool \hyperlink{classlazurite_1_1util_1_1_writer_a79c6ba39ea94a6a6be211e7172f944e5}{createDirectory} ()
+\item 
+bool \hyperlink{classlazurite_1_1util_1_1_writer_a2bf9621aaa39def983069d70c09e5c6a}{can\_\-write} ()
+\item 
+void \hyperlink{classlazurite_1_1util_1_1_writer_af7b90159ade4db522568ba46b3c0a00a}{write} (string \_\-\_\-writed\_\-word)
+\item 
+void \hyperlink{classlazurite_1_1util_1_1_writer_ae7beb36247424b99646f4b557fcafa59}{write} (string \_\-\_\-format, params object\mbox{[}$\,$\mbox{]} \_\-\_\-args)
+\item 
+void \hyperlink{classlazurite_1_1util_1_1_writer_a38610a24a9bda46a3ba1e01617a4edf5}{writeln} (string \_\-\_\-word)
+\item 
+void \hyperlink{classlazurite_1_1util_1_1_writer_a94ba55d8211171403215e84c2da2b162}{writeln} (string \_\-\_\-format, params object\mbox{[}$\,$\mbox{]} \_\-\_\-arg)
+\item 
+void \hyperlink{classlazurite_1_1util_1_1_writer_a68dcf9775d5b433d3036e9bffb138f00}{close} ()
+\begin{DoxyCompactList}\small\item\em ファイル・ストリームを閉じます。 \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected メソッド}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classlazurite_1_1util_1_1_writer_a03a0e9029a3c2700eb539d3fb3ad1f80}{createWriter} ()
+\item 
+bool \hyperlink{classlazurite_1_1util_1_1_writer_a78a3a05c40f8e22dc3f2f7bf5dc78dbf}{createWriter} (string \_\-\_\-charset)
+\item 
+bool \hyperlink{classlazurite_1_1util_1_1_writer_aedfaa1434267419700f66c319d7cc9d1}{createWriter} (Encoding \_\-\_\-encoding)
+\item 
+void \hyperlink{classlazurite_1_1util_1_1_writer_ae0505d0da349d6009401b33e55b08bc4}{onError} (Exception \_\-\_\-e)
+\begin{DoxyCompactList}\small\item\em 例外がスローされたら呼ばれます。 \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{プロパティ}
+\begin{DoxyCompactItemize}
+\item 
+subroutine$<$ Exception $>$ \hyperlink{classlazurite_1_1util_1_1_writer_a2a39a19e6fb9262f37b27be31b5a45c3}{settlement}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classlazurite_1_1util_1_1_writer_ae0505d0da349d6009401b33e55b08bc4}{onError()}で呼び出されるデリゲートを取得・設定します。 \item\end{DoxyCompactList}\item 
+bool \hyperlink{classlazurite_1_1util_1_1_writer_aad2ddbf9b2441adcdb7913e6cd85fe46}{is\_\-closed}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{説明}
+\hyperlink{classlazurite_1_1util_1_1_writer}{Writer} クラスは、TextWriter によるファイルストリームへの書き込みへの 簡潔なインターフェイスを提供します。. 
+
+\subsection{コンストラクタとデストラクタ}
+\hypertarget{classlazurite_1_1util_1_1_writer_a0b9d88e8ee23a4012f73c06808f6d55d}{
+\index{lazurite::util::Writer@{lazurite::util::Writer}!Writer@{Writer}}
+\index{Writer@{Writer}!lazurite::util::Writer@{lazurite::util::Writer}}
+\subsubsection[{Writer}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::util::Writer::Writer (string {\em \_\-\_\-filename})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1util_1_1_writer_a0b9d88e8ee23a4012f73c06808f6d55d}
+書き込む対象のファイル名を受け取って \hyperlink{classlazurite_1_1util_1_1_writer}{Writer} オブジェクトを 新しく作成します。 \hypertarget{classlazurite_1_1util_1_1_writer_a67cd02f6bbf65a91f2613fcd54217254}{
+\index{lazurite::util::Writer@{lazurite::util::Writer}!Writer@{Writer}}
+\index{Writer@{Writer}!lazurite::util::Writer@{lazurite::util::Writer}}
+\subsubsection[{Writer}]{\setlength{\rightskip}{0pt plus 5cm}lazurite::util::Writer::Writer (string {\em \_\-\_\-folderName}, \/  string {\em \_\-\_\-filename})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1util_1_1_writer_a67cd02f6bbf65a91f2613fcd54217254}
+フォルダ名と、書き込む対象のファイル名を受け取って \hyperlink{classlazurite_1_1util_1_1_writer}{Writer} オブジェクトを新しく作成します。 
+
+\subsection{関数}
+\hypertarget{classlazurite_1_1util_1_1_writer_a2bf9621aaa39def983069d70c09e5c6a}{
+\index{lazurite::util::Writer@{lazurite::util::Writer}!can\_\-write@{can\_\-write}}
+\index{can\_\-write@{can\_\-write}!lazurite::util::Writer@{lazurite::util::Writer}}
+\subsubsection[{can\_\-write}]{\setlength{\rightskip}{0pt plus 5cm}bool lazurite::util::Writer::can\_\-write ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1util_1_1_writer_a2bf9621aaa39def983069d70c09e5c6a}
+書き込めるかどうか判別します。 
+
+\hyperlink{interfacelazurite_1_1common_1_1_writable_ab08924bf9f4359d839e406135541b1b1}{lazurite::common::Writable}を実装しています。\hypertarget{classlazurite_1_1util_1_1_writer_a68dcf9775d5b433d3036e9bffb138f00}{
+\index{lazurite::util::Writer@{lazurite::util::Writer}!close@{close}}
+\index{close@{close}!lazurite::util::Writer@{lazurite::util::Writer}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::util::Writer::close ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1util_1_1_writer_a68dcf9775d5b433d3036e9bffb138f00}
+
+
+ファイル・ストリームを閉じます。 \hypertarget{classlazurite_1_1util_1_1_writer_a79c6ba39ea94a6a6be211e7172f944e5}{
+\index{lazurite::util::Writer@{lazurite::util::Writer}!createDirectory@{createDirectory}}
+\index{createDirectory@{createDirectory}!lazurite::util::Writer@{lazurite::util::Writer}}
+\subsubsection[{createDirectory}]{\setlength{\rightskip}{0pt plus 5cm}bool lazurite::util::Writer::createDirectory ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1util_1_1_writer_a79c6ba39ea94a6a6be211e7172f944e5}
+ディレクトリを作成します。 \hypertarget{classlazurite_1_1util_1_1_writer_aedfaa1434267419700f66c319d7cc9d1}{
+\index{lazurite::util::Writer@{lazurite::util::Writer}!createWriter@{createWriter}}
+\index{createWriter@{createWriter}!lazurite::util::Writer@{lazurite::util::Writer}}
+\subsubsection[{createWriter}]{\setlength{\rightskip}{0pt plus 5cm}bool lazurite::util::Writer::createWriter (Encoding {\em \_\-\_\-encoding})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classlazurite_1_1util_1_1_writer_aedfaa1434267419700f66c319d7cc9d1}
+指定されたエンコードを利用してライターオブジェクトを作成します。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-enc}]エンコードオブジェクト。\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+成功したら真。 
+\end{DoxyReturn}
+\hypertarget{classlazurite_1_1util_1_1_writer_a78a3a05c40f8e22dc3f2f7bf5dc78dbf}{
+\index{lazurite::util::Writer@{lazurite::util::Writer}!createWriter@{createWriter}}
+\index{createWriter@{createWriter}!lazurite::util::Writer@{lazurite::util::Writer}}
+\subsubsection[{createWriter}]{\setlength{\rightskip}{0pt plus 5cm}bool lazurite::util::Writer::createWriter (string {\em \_\-\_\-charset})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classlazurite_1_1util_1_1_writer_a78a3a05c40f8e22dc3f2f7bf5dc78dbf}
+指定されたキャラクターセットを利用してライターオブジェクトを作成します。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-charset}]キャラクターセットを識別する文字列。\end{DoxyParams}
+\begin{DoxyReturn}{戻り値}
+成功したら真。 
+\end{DoxyReturn}
+\hypertarget{classlazurite_1_1util_1_1_writer_a03a0e9029a3c2700eb539d3fb3ad1f80}{
+\index{lazurite::util::Writer@{lazurite::util::Writer}!createWriter@{createWriter}}
+\index{createWriter@{createWriter}!lazurite::util::Writer@{lazurite::util::Writer}}
+\subsubsection[{createWriter}]{\setlength{\rightskip}{0pt plus 5cm}bool lazurite::util::Writer::createWriter ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classlazurite_1_1util_1_1_writer_a03a0e9029a3c2700eb539d3fb3ad1f80}
+デフォルトのエンコード(Shift\_\-JIS)でライターオブジェクトを作成します。 \begin{DoxyReturn}{戻り値}
+成功したら真。 
+\end{DoxyReturn}
+\hypertarget{classlazurite_1_1util_1_1_writer_ae0505d0da349d6009401b33e55b08bc4}{
+\index{lazurite::util::Writer@{lazurite::util::Writer}!onError@{onError}}
+\index{onError@{onError}!lazurite::util::Writer@{lazurite::util::Writer}}
+\subsubsection[{onError}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::util::Writer::onError (Exception {\em \_\-\_\-e})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classlazurite_1_1util_1_1_writer_ae0505d0da349d6009401b33e55b08bc4}
+
+
+例外がスローされたら呼ばれます。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-e}]\end{DoxyParams}
+\hypertarget{classlazurite_1_1util_1_1_writer_ae7beb36247424b99646f4b557fcafa59}{
+\index{lazurite::util::Writer@{lazurite::util::Writer}!write@{write}}
+\index{write@{write}!lazurite::util::Writer@{lazurite::util::Writer}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::util::Writer::write (string {\em \_\-\_\-format}, \/  params object\mbox{[}$\,$\mbox{]} {\em \_\-\_\-args})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1util_1_1_writer_ae7beb36247424b99646f4b557fcafa59}
+指定されたフォーマットを使用してオブジェクトの文字列表現を書き込みます。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-format}]文字列のフォーマット。 \item[{\em \_\-\_\-args}]オブジェクト。 \end{DoxyParams}
+
+
+\hyperlink{interfacelazurite_1_1common_1_1_writable_a3f0f9f537e8a8b3fa86bb13fea5ebef7}{lazurite::common::Writable}を実装しています。\hypertarget{classlazurite_1_1util_1_1_writer_af7b90159ade4db522568ba46b3c0a00a}{
+\index{lazurite::util::Writer@{lazurite::util::Writer}!write@{write}}
+\index{write@{write}!lazurite::util::Writer@{lazurite::util::Writer}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::util::Writer::write (string {\em \_\-\_\-writed\_\-word})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1util_1_1_writer_af7b90159ade4db522568ba46b3c0a00a}
+指定された文字列を書き込みます。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-word}]書き込みたい文字列。 \end{DoxyParams}
+
+
+\hyperlink{interfacelazurite_1_1common_1_1_writable_a3e89b67f8716f5b22cdae02e2e552706}{lazurite::common::Writable}を実装しています。\hypertarget{classlazurite_1_1util_1_1_writer_a94ba55d8211171403215e84c2da2b162}{
+\index{lazurite::util::Writer@{lazurite::util::Writer}!writeln@{writeln}}
+\index{writeln@{writeln}!lazurite::util::Writer@{lazurite::util::Writer}}
+\subsubsection[{writeln}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::util::Writer::writeln (string {\em \_\-\_\-format}, \/  params object\mbox{[}$\,$\mbox{]} {\em \_\-\_\-arg})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1util_1_1_writer_a94ba55d8211171403215e84c2da2b162}
+指定されたフォーマットを使用してオブジェクトの文字列表現を書き込んだあとに改行します。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-format}]文字列のフォーマット。 \item[{\em \_\-\_\-args}]オブジェクト。 \end{DoxyParams}
+
+
+\hyperlink{interfacelazurite_1_1common_1_1_writable_a44ea83effb9ad385e07938443a2685bb}{lazurite::common::Writable}を実装しています。\hypertarget{classlazurite_1_1util_1_1_writer_a38610a24a9bda46a3ba1e01617a4edf5}{
+\index{lazurite::util::Writer@{lazurite::util::Writer}!writeln@{writeln}}
+\index{writeln@{writeln}!lazurite::util::Writer@{lazurite::util::Writer}}
+\subsubsection[{writeln}]{\setlength{\rightskip}{0pt plus 5cm}void lazurite::util::Writer::writeln (string {\em \_\-\_\-word})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classlazurite_1_1util_1_1_writer_a38610a24a9bda46a3ba1e01617a4edf5}
+指定された文字列を書き込んだあとに改行します。 
+\begin{DoxyParams}{引数}
+\item[{\em \_\-\_\-word}]書き込みたい文字列。 \end{DoxyParams}
+
+
+\hyperlink{interfacelazurite_1_1common_1_1_writable_a8414621bb09a08186a73c2b9d0f60f3e}{lazurite::common::Writable}を実装しています。
+
+\subsection{プロパティ}
+\hypertarget{classlazurite_1_1util_1_1_writer_aad2ddbf9b2441adcdb7913e6cd85fe46}{
+\index{lazurite::util::Writer@{lazurite::util::Writer}!is\_\-closed@{is\_\-closed}}
+\index{is\_\-closed@{is\_\-closed}!lazurite::util::Writer@{lazurite::util::Writer}}
+\subsubsection[{is\_\-closed}]{\setlength{\rightskip}{0pt plus 5cm}bool lazurite::util::Writer::is\_\-closed\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}}}
+\label{classlazurite_1_1util_1_1_writer_aad2ddbf9b2441adcdb7913e6cd85fe46}
+\hypertarget{classlazurite_1_1util_1_1_writer_a2a39a19e6fb9262f37b27be31b5a45c3}{
+\index{lazurite::util::Writer@{lazurite::util::Writer}!settlement@{settlement}}
+\index{settlement@{settlement}!lazurite::util::Writer@{lazurite::util::Writer}}
+\subsubsection[{settlement}]{\setlength{\rightskip}{0pt plus 5cm}subroutine$<$Exception$>$ lazurite::util::Writer::settlement\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}}}
+\label{classlazurite_1_1util_1_1_writer_a2a39a19e6fb9262f37b27be31b5a45c3}
+
+
+\hyperlink{classlazurite_1_1util_1_1_writer_ae0505d0da349d6009401b33e55b08bc4}{onError()}で呼び出されるデリゲートを取得・設定します。 
+
+このクラスの説明は次のファイルから生成されました:\begin{DoxyCompactItemize}
+\item 
+lib/util/Writer.cs\end{DoxyCompactItemize}

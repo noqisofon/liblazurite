@@ -1,0 +1,10 @@
+bin\Debug\lazurite.dll
+bin\Debug\lazurite.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\lazurite.dll
+obj\Debug\lazurite.pdb
+bin\Release\lazurite.dll
+bin\Release\lazurite.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\lazurite.dll
+obj\Release\lazurite.pdb
