@@ -152,6 +152,7 @@
     <Compile Include="lib\util\microsoft\win32api\BY_HANDLE_FILE_INFORMATION.cs" />
     <Compile Include="lib\util\microsoft\win32api\FILETIME.cs" />
     <Compile Include="lib\util\microsoft\win32api\FileSystem.cs" />
+    <Compile Include="lib\util\RadixConvert.cs" />
     <Compile Include="lib\util\searching\FileSearcherEx.cs" />
     <Compile Include="lib\util\searching\SearcherHandler.cs" />
     <Compile Include="lib\util\searching\SearchEvent.cs" />
