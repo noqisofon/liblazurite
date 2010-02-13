@@ -358,10 +358,10 @@ namespace lazurite.util {
         private static void check_radix_argument(int radix) {
 
             if ( radix == 2 || radix == 8 || radix == 10 || radix == 16 ) {
-                throw new ArgumentException( "2／8／10／16進数はSystem.Convertクラスを使ってください。" );
+                throw new ArgumentException( "(2|8|10|16)進数は System.Convert クラスを使ってください。" );
             }
             if ( radix <= 1 || 36 < radix ) {
-                throw new ArgumentException( "3～36進数にしか対応していません。" );
+                throw new ArgumentException( "3..36 進数にしか対応していません。" );
             }
         }
 

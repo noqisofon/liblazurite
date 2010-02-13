@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration( "" )]
 [assembly: AssemblyCompany( "" )]
 [assembly: AssemblyProduct( "lazurite misc libraries" )]
-[assembly: AssemblyCopyright( "copyright (C) 2008-2009 htoita" )]
+[assembly: AssemblyCopyright( "copyright (C) 2008-2010 htoita" )]
 [assembly: AssemblyTrademark( "" )]
 [assembly: AssemblyCulture( "" )]
 
@@ -32,4 +32,4 @@ using System.Runtime.InteropServices;
 // すべての値を指定するか、下のように '*' を使ってリビジョンおよびビルド番号を 
 // 既定値にすることができます:
 [assembly: AssemblyVersion( "1.3.*" )]
-[assembly: AssemblyFileVersion( "1.3.10.7" )]
+[assembly: AssemblyFileVersion( "1.3.10.9" )]
