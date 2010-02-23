@@ -1,9 +1,12 @@
 *.*.*~
 *.sh
 *.log
+*.html
 *.txt
 *.exe
 *.pdb
 *.dll
 *.bat
 *.application
+*.conf
+*.cache
