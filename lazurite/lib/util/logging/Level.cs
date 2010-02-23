@@ -68,40 +68,40 @@ namespace lazurite.util.logging {
         /// <summary>
         /// 
         /// </summary>
-        public static Level ALL = new Level( "ALL", (int)FiltteringLevel.ALL );
+        public static readonly Level ALL = new Level( "ALL", (int)FiltteringLevel.ALL );
         /// <summary>
         /// 
         /// </summary>
-        public static Level FINEST = new Level( "FINEST", (int)FiltteringLevel.FINEST );
+        public static readonly Level FINEST = new Level( "FINEST", (int)FiltteringLevel.FINEST );
 
         /// <summary>
         /// 
         /// </summary>
-        public static Level FINER = new Level( "FINER", (int)FiltteringLevel.FINER );
+        public static readonly Level FINER = new Level( "FINER", (int)FiltteringLevel.FINER );
         /// <summary>
         /// 
         /// </summary>
-        public static Level FINE = new Level( "FINE", (int)FiltteringLevel.FINE );
+        public static readonly Level FINE = new Level( "FINE", (int)FiltteringLevel.FINE );
         /// <summary>
         /// 
         /// </summary>
-        public static Level CONFIG = new Level( "CONFIG", (int)FiltteringLevel.CONFIG );
+        public static readonly Level CONFIG = new Level( "CONFIG", (int)FiltteringLevel.CONFIG );
         /// <summary>
         /// 
         /// </summary>
-        public static Level INFO = new Level( "INFO", (int)FiltteringLevel.INFO );
+        public static readonly Level INFO = new Level( "INFO", (int)FiltteringLevel.INFO );
         /// <summary>
         /// 
         /// </summary>
-        public static Level WARNING = new Level( "WARNING", (int)FiltteringLevel.WARNING );
+        public static readonly Level WARNING = new Level( "WARNING", (int)FiltteringLevel.WARNING );
         /// <summary>
         /// 
         /// </summary>
-        public static Level SEVERE = new Level( "SEVERE", (int)FiltteringLevel.SEVERE );
+        public static readonly Level SEVERE = new Level( "SEVERE", (int)FiltteringLevel.SEVERE );
         /// <summary>
         /// 
         /// </summary>
-        public static Level OFF = new Level( "OFF", (int)FiltteringLevel.OFF );
+        public static readonly Level OFF = new Level( "OFF", (int)FiltteringLevel.OFF );
 
 
         /// <summary>
@@ -124,6 +124,25 @@ namespace lazurite.util.logging {
         /// <summary>
         /// 
         /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public override bool Equals(object obj) {
+            return base.Equals( obj );
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public override int GetHashCode() {
+            return base.GetHashCode();
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
         /// <param name="__filltering_level"></param>
         /// <returns></returns>
         public static Level valueOf(FiltteringLevel __filltering_level) {
@@ -133,7 +152,7 @@ namespace lazurite.util.logging {
                 case FiltteringLevel.ALL:
                     result = ALL;
                     break;
-                
+
                 case FiltteringLevel.FINEST:
                     result = FINEST;
                     break;
@@ -141,32 +160,98 @@ namespace lazurite.util.logging {
                 case FiltteringLevel.FINER:
                     result = FINER;
                     break;
-                
+
                 case FiltteringLevel.FINE:
                     result = FINE;
                     break;
-                
+
                 case FiltteringLevel.CONFIG:
                     result = CONFIG;
                     break;
-                
+
                 case FiltteringLevel.INFO:
                     result = INFO;
                     break;
-                
+
                 case FiltteringLevel.WARNING:
                     result = WARNING;
                     break;
-                
+
                 case FiltteringLevel.SEVERE:
                     result = SEVERE;
                     break;
-                
+
                 case FiltteringLevel.OFF:
                     result = OFF;
                     break;
             }
             return result;
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="left"></param>
+        /// <param name="right"></param>
+        /// <returns></returns>
+        public static bool operator ==(Level left, Level right) {
+            return left.level_value_ == right.level_value_;
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="left"></param>
+        /// <param name="right"></param>
+        /// <returns></returns>
+        public static bool operator !=(Level left, Level right) {
+            return left.level_value_ != right.level_value_;
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="left"></param>
+        /// <param name="right"></param>
+        /// <returns></returns>
+        public static bool operator >(Level left, Level right) {
+            return left.level_value_ > right.level_value_;
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="left"></param>
+        /// <param name="right"></param>
+        /// <returns></returns>
+        public static bool operator >=(Level left, Level right) {
+            return left.level_value_ >= right.level_value_;
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="left"></param>
+        /// <param name="right"></param>
+        /// <returns></returns>
+        public static bool operator <(Level left, Level right) {
+            return left.level_value_ < right.level_value_;
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="left"></param>
+        /// <param name="right"></param>
+        /// <returns></returns>
+        public static bool operator <=(Level left, Level right) {
+            return left.level_value_ <= right.level_value_;
         }
     }
 }
