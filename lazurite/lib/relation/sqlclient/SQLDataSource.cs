@@ -22,14 +22,14 @@ namespace lazurite.relation.sqlclient {
                 return "SqlClient";
             }
         }
-        
+
 
         /// <summary>
         /// ローカルパソコン用。
         /// </summary>
         /// <param name="__initial_catalog"></param>
-        public SQLDataSource(string __initial_catalog) 
-            : base(__initial_catalog, "(local)", true)
+        public SQLDataSource(string __initial_catalog)
+            : base( __initial_catalog, "(local)", true ) 
         {
         }
         /// <summary>
@@ -37,8 +37,8 @@ namespace lazurite.relation.sqlclient {
         /// </summary>
         /// <param name="__initial_catalog"></param>
         /// <param name="__data_source"></param>
-        public SQLDataSource(string __initial_catalog, string __data_source) 
-            : base(__initial_catalog, __data_source, true)
+        public SQLDataSource(string __initial_catalog, string __data_source)
+            : base( __initial_catalog, __data_source, true ) 
         {
         }
         /// <summary>
@@ -47,8 +47,8 @@ namespace lazurite.relation.sqlclient {
         /// <param name="__initial_catalog"></param>
         /// <param name="__data_source"></param>
         /// <param name="__integrated_security"></param>
-        public SQLDataSource(string __initial_catalog, string __data_source, bool __integrated_security) 
-            : base(__initial_catalog, __data_source, __integrated_security)
+        public SQLDataSource(string __initial_catalog, string __data_source, bool __integrated_security)
+            : base( __initial_catalog, __data_source, __integrated_security ) 
         {
         }
 
