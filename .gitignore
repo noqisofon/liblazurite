@@ -1,7 +1,6 @@
 *.*.*~
 *.sh
 *.log
-*.html
 *.txt
 *.exe
 *.pdb
@@ -10,3 +9,7 @@
 *.application
 *.conf
 *.cache
+*.suo
+*.user
+*.rb
+*.bak
