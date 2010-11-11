@@ -14,8 +14,9 @@ namespace lazurite.etherial {
     /// 
     /// </summary>
     public class OLEConnectionFactory : utils.ConnectionFactory {
-
-
+        /// <summary>
+        /// 
+        /// </summary>
         private static readonly string Provider = "Microsoft.Jet.OleDb.4.0";
 
 
@@ -25,8 +26,7 @@ namespace lazurite.etherial {
         /// <param name="initial_catalog"></param>
         /// <param name="database_path"></param>
         public OLEConnectionFactory(string initial_catalog, string database_path)
-            : base( database_path, false, initial_catalog ) 
-        {
+            : base( database_path, false, initial_catalog ) {
         }
 
 

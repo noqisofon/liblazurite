@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // アセンブリに関する一般情報は以下の属性セットをとおして制御されます。 
 // アセンブリに関連付けられている情報を変更するには、
 // これらの属性値を変更してください。
-[assembly: AssemblyTitle( "lazurite" )]
-[assembly: AssemblyDescription( "" )]
+[assembly: AssemblyTitle( "lazurite for .NET framework 2.0" )]
+[assembly: AssemblyDescription( "lazurite misc/helper library" )]
 [assembly: AssemblyConfiguration( "" )]
 [assembly: AssemblyCompany( "" )]
-[assembly: AssemblyProduct( "lazurite misc libraries" )]
+[assembly: AssemblyProduct( "lazurite" )]
 [assembly: AssemblyCopyright( "copyright (C) 2008-2010 htoita" )]
 [assembly: AssemblyTrademark( "" )]
 [assembly: AssemblyCulture( "" )]
